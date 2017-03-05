@@ -260,6 +260,7 @@ while (<condition>);    // <- note the semicolon after the end
 
 ### <a name="assignments"></a>Home Assignments
 
+#### HackerRank
 1.	https://www.hackerrank.com/challenges/handshake  
 2.	https://www.hackerrank.com/challenges/summing-the-n-series  
 3.	https://www.hackerrank.com/challenges/staircase  
@@ -268,16 +269,18 @@ while (<condition>);    // <- note the semicolon after the end
 6.	https://www.hackerrank.com/challenges/strange-grid  
 7.	https://www.hackerrank.com/challenges/angry-professor  
 8.	https://www.hackerrank.com/challenges/rectangular-game  
-9.      Write a calculator program. Specifications:
-	1. Display a menu to the user. Menu should have the following options:
-		1. 1 = Addition, 2. Subtraction, 3 = Multiplication, 4 = Division, 4 = Exit
+
+#### Miscellaneous
+1. Write a calculator program. Specifications:
+    1. Display a menu to the user. Menu should have the following options:
+        1. 1 = Addition, 2. Subtraction, 3 = Multiplication, 4 = Division, 4 = Exit
 	2. Accept an integer choice. If the choice is either 1, 2 or 3, accept two **real numbers** from the user. (Hint: Search what real numbers are on Google, and decide on an appropriate data type for them.)
 	3. Perform the appropriate action on the two numbers. 
 	4. Display the output.
 	5. If the user input an incorrect choice, inform him/her. Do **not** exit.
-	6. Continue steps 1 to 5, till the user chooses to exit.
-	
-	Some interesting cases:
+	6. Continue steps 1 to 5, till the user chooses to exit.  
+  
+	Some interesting cases:  
 	1. What do you expect will happen when you choose option 4, and the second operand is 0? What actually happens? What happens when you change the data type to plain integers?  
 	2. Does this help you answer an [earlier puzzle](#puzzles)?  
 	3. Pick option 2, enter the first operand as 2.1, and the second as 1.2. What output do you expect? What do you actually get? Why?   
