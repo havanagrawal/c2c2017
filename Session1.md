@@ -20,6 +20,7 @@
 1. A programming language
 2. Object oriented
 3. WORA (Write-Once-Read-Anywhere)
+4. Platform Independent
  
 #### <a name="flavors"></a>Flavors of Java
 1. ME - Mobile Edition, 
@@ -28,6 +29,24 @@
 
 #### <a name="compilation"></a>Compilation of a java file
 JDK, JRE, JVM, bytecode
+
+JDK = Java Development Kit, provides you with libraries and binaries to develop Java programs  
+JRE = Java Runtime Environment, provides you with libraries to run Java programs  
+JVM = Java Virtual Machine, responsible for actually running compiled Java code (bytecode).  
+The JVM is what makes Java platform independent.  
+The JVM itself is not platform independent.  
+  
+When compiling, remember that `javac` requires the **filename** as a parameter.  
+When running, remember that `java` requires the **name of the main class** as a parameter
+
+To avoid confusion, (and by convention), you should name both the file and the class it contains with the same name, **but this is not strictly compulsory, unless your class is public**. So `HelloWorld.java` would have a class called `HelloWorld`, which would have to have a method called `main` with the correct signature (See [Hello World](#hello) example below.)
+	
+	
+	
+```
+javac HelloWorld.java
+java Hello
+```
 
 #### <a name="conventions"></a>Naming Conventions
 Variables and functions: `camelCase`  
@@ -46,8 +65,26 @@ class Hello {
 }
 ```
 
-`System`, `out`, and `println`
-Signature of a function, signature of `main`
+`System`, `out`, and `println`  
+Signature of a function = name of the method + number and type of arguments (return type is not part of the signature in Java)  
+signature of `main` = `main` + a single argument which is an array of Strings.  
+  
+If you do not define main correctly, but are close enough, these are the messages you would see **on runtime**:   
+```
+# Changed the return type
+Error: Main method must return a value of type void in class HelloWorld, please
+define the main method as:
+   public static void main(String[] args)
+	 
+# Removed the static identifier
+Error: Main method is not static in class HelloWorld, please define the main method as:
+   public static void main(String[] args)
+	 
+# Removed the public identifier
+# Note how it says it couldn't "find" the method at all.
+Error: Main method not found in class HelloWorld, please define the main method as:
+   public static void main(String[] args)
+```
 
 #### <a name="primitives"></a>Primitive data types
 Primitives in Java (`byte`, `short`, `int`, `long`, `float`, `double`, `boolean`, `char`) and their ranges
@@ -73,6 +110,9 @@ Ternary operator `condition ? value1 : value2`
 
 Implicit and explicit casting  
 Casting from and to different data types  
+
+![Order of Implicit Casting](https://www3.ntu.edu.sg/home/ehchua/programming/java/images/JavaBasics_ImplicitTypeCastingPrimitives.png)
+
 Be careful with shorthand notation (`+=`, `-=`) because of implicit casting  
 Be careful with floating point precision  
 
