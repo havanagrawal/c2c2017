@@ -55,6 +55,9 @@ Examples: `noOfCats`, `scanner`, `totalSalary`, `getAmount`
 Classes: `PascalCase`  
 Examples: `SampleJavaApplication`, `CodeChefSolution`
 
+Constants: `ALL_CAPS_WITH_UNDERSCORES`  
+Examples: `PI`, `SECONDS_IN_HOUR`
+
 #### <a name="hello"></a>Hello World
 
 ```java
@@ -107,6 +110,13 @@ Logical ops: `&&`, `||`
 Bitwise ops: `&`, `|`, `^`, `>>`, `<<`  
 Short-circuit behaviour  
 Ternary operator `condition ? value1 : value2`  
+
+Basic modular arithmetic rules:
+These rules are particularly useful when the result of a calculation overflows.
+  1. `(a + b) % c == ((a % c) + (b % c)) % c`  
+  2. `(a * b) % c == ((a % c) * (b % c)) % c`  
+
+Note: The same does not apply for division. Modular division is a slightly more involved process, and you are not expected to know it.  
 
 Implicit and explicit casting  
 Casting from and to different data types  
