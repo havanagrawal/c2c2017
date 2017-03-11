@@ -129,7 +129,6 @@ Using [Math](https://docs.oracle.com/javase/7/docs/api/java/lang/Math.html) clas
 
 1.	Write a function to print number of perfect squares less than n  
 2.	https://www.hackerrank.com/challenges/sherlock-and-squares  
-3.      https://www.hackerrank.com/challenges/flatland-space-stations  
 
 #### <a name="function-recursion"></a>Recursion
 1.	Terrible application of recursion: Factorial, Fibonacci  
