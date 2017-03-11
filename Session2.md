@@ -9,7 +9,6 @@
 2. [Functions](#functions)
     1. [Basic Syntax](#function-syntax)
     2. [Recursion](#function-recursion)
-    3. [Loop practice](#loops-practice)
 3. [Memoization](#memoization)
 4. [VarArgs](#varargs)
 5. [2D Arrays](#2d-arrays)
@@ -217,12 +216,12 @@ for (int i = 0; i < n; i++) {
 }
 ```
 
-Practice:
+Practice:  
 1.	Accept n. Accept a 2D array of dimensions n x n
-2.	Print the sum of each row
-3.	Print the sum of each column
-4.	Print the sum of each diagonal
-5.	Print the max such sum that occurs
+2.	Print the sum of each row  
+3.	Print the sum of each column  
+4.	Print the sum of each diagonal  
+5.	Print the max such sum that occurs  
 
 ### <a name="assignments"></a>Assignments
 
@@ -239,7 +238,7 @@ Practice:
 
 #### <a name="miscellaneous"></a>Miscellaneous
 1.	Write a recursive and non-recursive implementation for getting arbitrary Pascal triangle numbers. 
-<sup>n</sup>C<sub>r</sub> = <sup>n-1</sup>C<sub>r</sub> + <sup>n-1<sup/>C<sub>r-1</sub>
+<sup>n</sup>C<sub>r</sub> = <sup>n-1</sup>C<sub>r</sub> + <sup>n-1</sup>C<sub>r-1</sub>  
 <sup>n</sup>C<sub>r</sub> = n! / (r! * (n – r)!)
 2.	In both implementations, there are calculations that are being repeated. Can you avoid repeated calculations?
 3.	Write a function that calculates the Greatest Common Divisor of two integers. (https://en.wikipedia.org/wiki/Euclidean_algorithm#Implementations)
