@@ -237,9 +237,9 @@ Practice:
 9.	https://www.hackerrank.com/challenges/jumping-on-the-clouds
 
 #### <a name="miscellaneous"></a>Miscellaneous
-1.	Write a recursive and non-recursive implementation for getting arbitrary Pascal triangle numbers. 
+1.	Write a recursive and non-recursive implementation for getting arbitrary Pascal triangle numbers.  
 <sup>n</sup>C<sub>r</sub> = <sup>n-1</sup>C<sub>r</sub> + <sup>n-1</sup>C<sub>r-1</sub>  
-<sup>n</sup>C<sub>r</sub> = n! / (r! * (n – r)!)
+<sup>n</sup>C<sub>r</sub> = n! / (r! * (n – r)!)  
 2.	In both implementations, there are calculations that are being repeated. Can you avoid repeated calculations?
 3.	Write a function that calculates the Greatest Common Divisor of two integers. (https://en.wikipedia.org/wiki/Euclidean_algorithm#Implementations)
 4.	Write a function that checks if a number is prime. 
