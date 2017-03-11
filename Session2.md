@@ -243,8 +243,7 @@ Practice:
 2.	In both implementations, there are calculations that are being repeated. Can you avoid repeated calculations?
 3.	Write a function that calculates the Greatest Common Divisor of two integers. (https://en.wikipedia.org/wiki/Euclidean_algorithm#Implementations)
 4.	Write a function that checks if a number is prime. 
-5.	Implement the Sieve of Eratosthenes. Check for primality of the following numbers using the Sieve. 
-6.	Consider problem 8 in the [HackerRank](#hackerrank) section. Clearly, when calculating sums of sub-arrays, you end up solving the same problem over and over again. For instance, consider,  
+5.	Consider problem 8 in the [HackerRank](#hackerrank) section. Clearly, when calculating sums of sub-arrays, you end up solving the same problem over and over again. For instance, consider,  
 {1, 4, 3, 6}.  
 Sub-arrays of length 2 are {1, 4}, {4, 3}, {3, 6}, and their sums are 5, 7 and 9.  
 Sub-arrays of length 3 are {1, 4, 3}, {4, 3, 6}.  
