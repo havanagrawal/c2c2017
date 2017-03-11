@@ -74,7 +74,7 @@ System.out.println("No of months in a year are: " + noOfDaysInMonth.length)
 
 You can iterate through arrays in 2 ways:
 
-1. for
+1. for 
 ```java
 for (int i = 0; i < a.length; i++) {
 	System.out.println("The salary of employee " + i + " is " + salary[i]);
@@ -125,11 +125,11 @@ class FunctionExample {
 }
 ```
 
-Using Math class for common math operations. (`abs`, `max`, `min`, `pow`, `floor`, `ceil`, `log`, `sqrt`, `PI`, etc.)  
+Using [Math](https://docs.oracle.com/javase/7/docs/api/java/lang/Math.html) class for common math operations. (`abs`, `max`, `min`, `pow`, `floor`, `ceil`, `log`, `sqrt`, `PI`, etc.)  
 
 1.	Write a function to print number of perfect squares less than n  
 2.	https://www.hackerrank.com/challenges/sherlock-and-squares  
-3.  https://www.hackerrank.com/challenges/flatland-space-stations  
+3.      https://www.hackerrank.com/challenges/flatland-space-stations  
 
 #### <a name="function-recursion"></a>Recursion
 1.	Terrible application of recursion: Factorial, Fibonacci  
