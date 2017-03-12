@@ -217,7 +217,7 @@ for (int i = 0; i < n; i++) {
 
 Practice:  
 1.	Accept n. Accept a 2D array of dimensions n x n  
-2.	Print the sum of each row  
+2.	Print the sum of each row  
 3.	Print the sum of each column  
 4.	Print the sum of each diagonal  
 5.	Print the max such sum that occurs  
