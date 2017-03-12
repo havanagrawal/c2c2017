@@ -220,7 +220,7 @@ Practice:
 2.	Print the sum of each row  
 3.	Print the sum of each column  
 4.	Print the sum of each diagonal  
-5.	Print the max such sum that occurs  
+5.	Print the max of all the above sums. (The max of n row sums, n column sums, and 2 diagonals)
 
 ### <a name="assignments"></a>Assignments
 
@@ -232,7 +232,7 @@ Practice:
 5.	https://www.hackerrank.com/challenges/apple-and-orange
 6.	https://www.hackerrank.com/challenges/divisible-sum-pairs
 7.	https://www.hackerrank.com/challenges/bon-appetit
-8.  https://www.hackerrank.com/challenges/java-negative-subarray
+8.	https://www.hackerrank.com/challenges/java-negative-subarray
 9.	https://www.hackerrank.com/challenges/jumping-on-the-clouds
 
 #### <a name="miscellaneous"></a>Miscellaneous
