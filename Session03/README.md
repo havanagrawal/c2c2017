@@ -43,7 +43,7 @@ public static int min(int[] arr) {
         min = arr[i] < min ? arr[i] : min;
     }
     
-    return min
+    return min;
 }
 
 // Two arguments, but different type
