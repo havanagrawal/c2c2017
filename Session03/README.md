@@ -332,18 +332,7 @@ Practice:
 4.	https://www.hackerrank.com/challenges/caesar-cipher-1 
 5.	https://www.hackerrank.com/challenges/camelcase 
 
-### <a name="assignments"></a>Assignments
-
-#### <a name="miscellaneous"></a>Miscellaneous
-1. Make a `MathUtil` class. It should contain the following methods:
-    1. `gcd(long a, long b)`
-    2. `lcm(long a, long b)`
-    3. `min(long[] arr)`
-    4. `min(int[] arr)`
-    5. `max(long[] arr)`
-    6. `max(int[] arr)`
-    7. `average(long[] arr)`  
-    Think whether these should be instance methods or static methods. Decide on appropriate data types.  
+### <a name="assignments"></a>Assignments 
 
 #### <a name="hackerrank"></a>HackerRank
 1.	https://www.hackerrank.com/challenges/java-string-reverse
@@ -357,3 +346,14 @@ Practice:
 9.	https://www.hackerrank.com/challenges/game-of-thrones 
 10.	https://www.hackerrank.com/challenges/two-strings 
 11.	https://www.hackerrank.com/challenges/string-construction 
+
+#### <a name="miscellaneous"></a>Miscellaneous
+1. Make a `MathUtil` class. It should contain the following methods:
+    1. `gcd(long a, long b)`
+    2. `lcm(long a, long b)`
+    3. `min(long[] arr)`
+    4. `min(int[] arr)`
+    5. `max(long[] arr)`
+    6. `max(int[] arr)`
+    7. `average(long[] arr)`  
+    Think whether these should be instance methods or static methods. Decide on appropriate data types. 
