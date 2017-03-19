@@ -154,7 +154,7 @@ class Person {
 
 An instance method is used to modify or access one or more instance variables. In the `Person` class, `growOld` modifies the age property of that instance. So for example:
 
-```
+```java
 public static void main(String[] args) {
     Person p1 = new Person("Brandon", 16, 45.0);
     Person p2 = new Person("Rob", 21, 75.2);
@@ -184,15 +184,15 @@ public static void main(String[] args) {
 Sometimes, certain values are properties of the class itself, and not different for each instance.
 For `Person`, you could say that the number of bones are 206 (conveniently ignoring other factors).
 
-```
+```java
 class Person {
     static int noOfBones = 206;
 }
 ```
 
 Static variables are accessed by using the class name:
-```java
 
+```java
 // There are two examples of static variables in the below line, can you see it?
 System.out.println(Person.noOfBones);
 ```
@@ -236,12 +236,20 @@ This is obvious when you think about it. Since a static method belongs to the cl
     7.  `getBill(int rateScheme)`
 		a.  0 = 2 paisa per second, constant
 		b.  1 = free for first 10 seconds, then 3 paisa/s
-		c.  2 = 1 paisa/s for first 20 seconds, then 2 paisa/s
+		c.  2 = 1 paisa/s for first 20 seconds, then 2 paisa/s  
 	Decide on appropriate return types.  
-	Think about edge cases. 
+	Think about edge cases.  
 		1. What happens if you try to hang up when there is no ongoing call?  
 		2. What happens if you invoke `call`, when there is already an ongoing call?  
-	Helpful method: `System.getCurrentTimeMillis`
+	Helpful method: `System.getCurrentTimeMillis`  
+2. Write a class 2DPoint. It should have the following constructors and methods
+    1. `Point()`  
+    2. `Point(double x, double y)`  
+    3. `euclideanDistanceTo(Point p)` - Distance to Point p, using [Euclidean Distance Formula](https://en.wikipedia.org/wiki/Euclidean_distance#Two_dimensions)  
+    4. `manhattanDistanceto(Point p)` - Distance to Point p using [Manhattan Distance Formula](https://xlinux.nist.gov/dads/HTML/manhattanDistance.html)  
+    5. `midpoint(Point a, Point b)` - Return the midpoint of the two points.  
+    6. A static variable called `ORIGIN`, that represents the origin.  
+    Again, think about which of these methods should be static.
 
     
 #### <a name="class-final"></a>The `final` modifier
@@ -300,6 +308,9 @@ You can initialize a value to static final variable
 1. At the point of declaration  
 2. In the static block (next session)  
 
+Practice:
+1. Revisit [these](#class-practice) problems. Think whether any of your instance variables should be declared as final or not.
+
 ### <a name="string"></a>The `String` class
 
 The `String` class is a rather special class in Java, since it has several behaviors that make it appear to be a primitive.
@@ -331,8 +342,8 @@ Practice:
     4. `min(int[] arr)`
     5. `max(long[] arr)`
     6. `max(int[] arr)`
-    7. `average(long[] arr)`
-    Think whether these should be instance methods or static methods. Decide on appropriate data types.
+    7. `average(long[] arr)`  
+    Think whether these should be instance methods or static methods. Decide on appropriate data types.  
 
 #### <a name="hackerrank"></a>HackerRank
 1.	https://www.hackerrank.com/challenges/java-string-reverse
