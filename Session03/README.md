@@ -135,7 +135,7 @@ class Person {
 
 An instance variable is a property of a single instance of a class.  
 
-When you declare an instance variable, it is given a default value. The default values are as follows:  
+<a name="class-instance-var-defaults">When you declare an instance variable, it is given a default value. The default values are as follows:  
 Numeric data types (byte, short, int, long, float, double): *0*  
 Boolean: *false*  
 Object references: *null* (We will see this in the next session)  
@@ -262,7 +262,7 @@ The `final` modifier can be applied to
 
 When the `final` modifier is applied to a variable, it means that once the variable is assigned a value, it cannot be modified.
 
-```
+```java
 class Student {
 	// This is formally known as a "blank final".
 	// If you do not initialize this in every constructor, you will get a compile time error
@@ -281,7 +281,7 @@ You can assign a value to a final instance variable
 
 Remember that when you assign the value at the point of declaration, EVERY instance of the class will have that value, and can not be changed at all.
 
-```
+```java
 class Person {
 	// just an example
 	final int noOfBones = 206;
@@ -324,6 +324,52 @@ String b = a + ", world";
 ```
 
 The best place to understand a new class is by referring to the Javadocs. The JavaDocs for the `String` class are [here](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)
+
+#### Working with the `char` datatype
+
+When manipulating String instances, it is often useful to be able to manipulate individual characters. A useful tip to remember is that char is a numeric-like data type, and you can do arithmetic on it. 
+
+```java
+// You can iterate!
+for (char c = 'a'; c <= 'z'; c++) {
+	// Do something with c
+}
+
+// To convert a lowercase char into uppercase
+int upperLowerDiff = 'A' - 'a';
+char bigH = (char)('h' + upperLowerDiff);
+
+// You can reason about this very simply
+// 'A' - 'a' = 'H' - 'h'
+// 'A' - 'a' + 'h' = 'H'
+
+// Similarly
+
+// To convert uppercase char into lowercase
+int lowerUpperDiff = 'a' - 'A';
+char bigH = (char)('H' + upperLowerDiff);
+
+// When you want to count frequencies of characters, a nifty trick is to use an array, and index it by character value
+String s = "wewillcountcharacters";
+char[] cArray = s.toCharArray();
+
+// Given that you will MOSTLY work with only ASCII, and not UNICODE
+// You only need a size of 128 for counting characters in an arbitrary String
+int[] frequencies = new int[128];
+
+for (char c : cArray) {
+	frequencies[c] += 1;
+}
+```
+
+Note: Arrays are object-like. You can notice several similarities between arrays and objects:  
+1. The .length property  
+2. Typicaly use of `new` when creating arrays.  
+
+This gives us a third feature of an array:  
+When you don't assign values to individual cells in an array, they follow the [default value rule](#class-instance-var-defaults).  
+This is how we are able to execute the line `frequencies[c] += 1`, because all cells of the array were initialized to 0.
+
 
 Practice:
 1.	https://www.hackerrank.com/challenges/java-strings-introduction
