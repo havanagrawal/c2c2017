@@ -115,7 +115,52 @@ TODO
 
 ### <a name="buffered-reader"></a>BufferedReader - The Faster Way Of Accepting Input
 
-TODO
+As you may have noticed when solving last session's String problems, Scanner has a slight drawback, i.e. it does not play well when you intertwine calls of sc.next() and numeric input (sc.nextInt(), sc.nextDouble(), etc)  
+
+In addition, it also has the drawback of being slightly slow. When you start solving problems on CodeChef, using Scanner will almost always result in timeouts. As a replacement, you can use BufferedReader. Below is a complete example of how to use BufferedReader to accept and transform numerical input:
+
+Imagine that the input format is:  
+1. The first number is the number of test cases T, 1 <= T <= 100
+2. 2*T lines follow, 2 lines per test case.  
+	1. The first line is the number of elements in the array
+	2. The second is an array of integers.
+
+```java
+class BufferedReaderExample {
+	// Note the "throws IOException"
+	// Not writing those lines will end up in a compiler error
+	// We will see Exceptions in detail in a future session
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		// br.readLine() returns a single String, which is the current line of input
+		String s = br.readLine();
+		int T = Integer.parseInt(s);	
+		
+		// Similar methods are Long.parseLong(), Double.parseDouble(), etc
+		
+		while (T != 0) {
+			// You can do it in a single line as well
+			int n = Integer.parseInt(br.readLine());
+			
+			int[] arr = new int[n];
+			
+			// br.readLine() would result in a String which looks something like "1 2 3 10 5 4"
+			// Split returns an array of strings, depending on the delimiter, which is mostly a space
+			// sa now has {"1", "2", "3", "10", "5", "4"}
+			String[] sa = br.readLine().split(" ");
+			
+			for (int i = 0; i < n; i++) {
+				arr[i] = Integer.parseInt(sa[i]);
+			}
+			
+			// Do usual stuff with arr
+			
+			T--;
+		}
+	}
+}
+```
 
 ### <a name="assignments"></a>Assignments 
 
