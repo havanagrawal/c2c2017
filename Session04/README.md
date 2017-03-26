@@ -65,7 +65,7 @@ class ComplanAdvertisement {
 ### <a name="initializer"></a>Initializer Blocks
 There are two types of initializer blocks in Java.
 
-1. Instance Initializer Block  
+1. <a name="instance-initializer"></a>Instance Initializer Block  
 As the name suggests, it is used to initialize instance variables.
 Example:
 
@@ -81,7 +81,7 @@ class Person {
 
 The initializer block's content is copied into **every** constructor by the compiler. This means that you can initialize final variables in the instance initializer block as well. 
 
-2. Static Initializer Block  
+2. <a name="static-initializer"></a>Static Initializer Block  
 This is executed once for each class.
 
 ```java
@@ -111,7 +111,33 @@ TODO
 
 ### <a name="recursion"></a>Recursion And Memoization Practice
 
-TODO
+Write recursive and memoized versions of the following sequences:  
+
+1. [Tribonacci Series](https://oeis.org/A000073)  
+T<sub>0</sub> = 0  
+T<sub>1</sub> = 1  
+T<sub>2</sub> = 1  
+T<sub>n</sub> = T <sub>n-1</sub> + T<sub>n-2</sub> + T<sub>n-3</sub>  
+
+2. [Lucas Numbers](https://oeis.org/A000032)  
+L<sub>0</sub> = 2  
+L<sub>1</sub> = 1  
+L<sub>n</sub> = L<sub>n-1</sub> + L<sub>n-2</sub>  
+
+3. [Pell Numbers](https://oeis.org/A000129)  
+P<sub>0</sub> = 0  
+P<sub>1</sub> = 1  
+P<sub>n</sub> = 2*P<sub>n-1</sub> + P<sub>n-2</sub>  
+
+4. Pascal's Triangle  
+<sup>n</sup>C<sub>0</sub> = 1  
+<sup>n</sup>C<sub>n</sub> = 1  
+<sup>n</sup>C<sub>r</sub> = <sup>n-1</sup>C<sub>r</sub> + <sup>n-1</sup>C<sub>r-1</sub>  
+
+Assume the following input format for the first 3 sequences:  
+1. The first line is an integer T, the number of test cases  
+2. T integers follow. For each integer n, print on a single line, space separated, the n<sup>th</sup> Tribonacci, Lucas and Pell number.  
+Verify your work by checking the sequence values on the links.
 
 ### <a name="buffered-reader"></a>BufferedReader - The Faster Way Of Accepting Input
 
