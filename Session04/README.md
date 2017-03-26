@@ -65,7 +65,7 @@ class ComplanAdvertisement {
 ### <a name="initializer"></a>Initializer Blocks
 There are two types of initializer blocks in Java.
 
-1. Instance Initializer Block
+1. Instance Initializer Block  
 As the name suggests, it is used to initialize instance variables.
 Example:
 
@@ -81,7 +81,7 @@ class Person {
 
 The initializer block's content is copied into **every** constructor by the compiler. This means that you can initialize final variables in the instance initializer block as well. 
 
-2. Static Initializer Block
+2. Static Initializer Block  
 This is executed once for each class.
 
 ```java
