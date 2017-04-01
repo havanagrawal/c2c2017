@@ -5,14 +5,15 @@
 2. [Initializer Blocks](#initializer)
     1. [Instance Initializer Block](#instance-initializer)
     2. [Static Initializer Block](#static-initializer)
-2. [Call Stack](#call-stack)
-3. [Object Heap](#object-heap)
-4. [Some Traps and Pitfalls](#traps)
+3. [Call Stack](#call-stack)
+4. [Object Heap](#object-heap)
+5. [Some Traps and Pitfalls](#traps)
 	1. [Compiler Evaluations](#compiler)
 	2. [String Interning](#string-intern)
-5. [Recursion And Memoization Practice](#recursion)
-6. [BufferedReader - The Faster Way Of Accepting Input](#buffered-reader)
-6. [Assignments](#assignments)
+6. [Recursion And Memoization Practice](#recursion)
+7. [BufferedReader - The Faster Way Of Accepting Input](#buffered-reader)
+8. [Sorting - A High Level Perspective](#sorting)
+9. [Assignments](#assignments)
     1. [HackerRank](#hackerrank)
     2. [Miscellaneous](#miscellaneous)
 
@@ -187,6 +188,14 @@ class BufferedReaderExample {
 	}
 }
 ```
+
+### <a name="sorting"></a>Sorting - A High Level Perspective
+
+Sorting is simply ordering a collection according to natural ordering, or some comparator logic. For instance, an array of integers can be sorted in ascending order, an array of Strings can be sorted in lexicographical (dictionary) order, and so on.  
+
+There are dozens of sorting algorithms, which we will see in a later session. For now, remember that very rarely will you have to write a sorting algorithm from scratch. It is only in certain problems where you have to modify an existing sorting algorithm to get to the solution. In most other cases, if you want to sort an array (or any other collection), it is best to use in built methods since they have been scrutinized and optimized far beyond what a hand-written algorithm would be capable of.  
+
+In Java, you can use `Arrays.sort` static (overloaded) method from the [Arrays](https://docs.oracle.com/javase/7/docs/api/java/util/Arrays.html) utility class from the `java.util` package.
 
 ### <a name="assignments"></a>Assignments 
 
