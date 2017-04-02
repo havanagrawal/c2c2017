@@ -169,7 +169,7 @@ A small access matrix makes it very clear what acccess they provide:
 
 For inheriting from classes, we use the `extends` keyword
 
-This is best seen with an example, which is [here](../blob/master/PointRunner.java).
+This is best seen with an example, which is [here](../Session05/PointRunner.java).
 
 Practice:  
 
