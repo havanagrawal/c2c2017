@@ -140,7 +140,7 @@ The `this` is simply a reference to the object on which this method is called.
 
 #### <a name="inheritance-models"></a>Inheritance Models
 
-![Inheritance Models](https://github.com/havanagrawal/c2c2017/tree/master/Session05/inheritance-models.png)
+![Inheritance Models](https://github.com/havanagrawal/c2c2017/blob/master/Session05/inheritance-models.png)
 
 Out of all of these, multiple inheritance is not supported in Java. This is because it suffers from the [diamond problem](https://en.wikipedia.org/wiki/Multiple_inheritance#The_diamond_problem).
 
