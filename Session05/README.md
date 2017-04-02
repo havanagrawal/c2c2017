@@ -8,7 +8,7 @@
     2. [Access Modifiers](#access-modifiers)
 	3. [The `extends` keyword](#extends-keyword)
 	4. [The Point Example](#point-example)
-4. [Overriding](#overriding) (Practice problems TODO)
+4. [Overriding](#overriding)
 5. [Abstract Data Structures - an Overview](#ads)
 6. [Assignments](#assignments)
     1. [HackerRank](#hackerrank)
@@ -155,6 +155,7 @@ In Java, there are four access modifiers (in decreasing order of access):
 4. private  
 
 A small access matrix makes it very clear what acccess they provide:  
+
 | Modifier  | Within class | Within package | Outside package, to sub-classes only | Outside package |
 |-----------|--------------|----------------|--------------------------------------|-----------------|
 | public    | Y            | Y              | Y                                    | Y               |
