@@ -262,6 +262,8 @@ Solve these AFTER you have solved the miscellaneous section, since the classes y
 
 1. https://www.hackerrank.com/challenges/balanced-brackets
 2. https://www.hackerrank.com/challenges/simple-text-editor
+3. https://www.hackerrank.com/challenges/maximum-element
+
 
 #### <a name="miscellaneous"></a>Miscellaneous
 1. Implement a class called `CharStack`. It should have the following methods:
