@@ -15,6 +15,7 @@
 6. [Assignments](#assignments)
 	1. [HackerRank](#hackerrank)
 	2. [Miscellaneous](#miscellaneous)
+7. [Test](#test)
 
 ### <a name="revision"></a>Revision
 
@@ -247,3 +248,7 @@ Practice:
 Sub-arrays of length 2 are {1, 4}, {4, 3}, {3, 6}, and their sums are 5, 7 and 9.  
 Sub-arrays of length 3 are {1, 4, 3}, {4, 3, 6}.  
 In this case, you end up having to recalculate the sum of {1, 4} and {4, 3}, which you already calculated earlier. Is there a way to memoize the results?
+
+### <a name="test"></a>Test 
+Link: https://www.hackerrank.com/contests/c2c2017-1  
+Note: The problem Marc's Cakewalk was added accidentally. It requires sorting which was not covered by this point.  
