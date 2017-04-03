@@ -13,6 +13,7 @@
 3. [Assignments](#assignments)
     1. [HackerRank](#hackerrank)
     2. [Miscellaneous](#miscellaneous)
+4. [Test](#test)
 
 ### <a name="function-overload"></a>Function Overloading
 
@@ -403,3 +404,6 @@ Practice:
     6. `max(int[] arr)`
     7. `average(long[] arr)`  
     Think whether these should be instance methods or static methods. Decide on appropriate data types. 
+    
+### <a name="test"></a>Test
+Link: https://www.hackerrank.com/contests/c2c2017-2
