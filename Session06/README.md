@@ -22,12 +22,12 @@
 5.	What is an instance method? (behaviour of an instance)
 6.	What is a static method? (behaviour of the class)
 7.	Overloading is _ polymorphism (compile-time, static)
-8.	If I donít define a constructor, I get a _? (default constructor)
+8.	If I don‚Äôt define a constructor, I get a _? (default constructor)
 9.	If I define any constructor, what happens to the default? (disappears)
 10.	What does the final modifier do to variables? (makes them initializable only once)
 11.	Where can you assign to a final instance variable? (declaration, all constructors, instance initialization block)
 12.	Where can you assign to a final static variable? (declaration, static block)
-13.	When I say ìnewî, what happens? (object is created on the heap_
+13.	When I say ‚Äúnew‚Äù, what happens? (object is created on the heap_
 14.	What is the first method to be pushed onto the call stack? (main)
 15.	Where are primitives stored? (call stack)
 16.	Where are object references stored? (call stack)
@@ -221,7 +221,7 @@ class Runner {
 
 As we have seen before, you can explicitly call the parent class constructor by using the `super` keyword as a constructor call.
 
-```
+```java
 class Point {
 	private int x;
 	
@@ -249,7 +249,7 @@ Important points:
 2. An abstract method is a method with the abstract modifier, and no implementation.  
 3. If you extend an abstract class, but don't override ALL the abstract methods, then your class MUST be abstract as well.  
 
-```
+```java
 abstract class BankAccount {
 	abstract void deposit(double amount);
 	abstract void withdraw(double amount);
@@ -414,6 +414,8 @@ This now clarifies the two types of polymorphism and their implementations in Ja
 1. Static Polymorphism = Overloading (Decided at **Compile time** )  
 2. Dynamic Polymorphism = Overriding (Decided at **Runtime**)
 
+### <a name="#instance-initialization-order"></a>Order of Instance Variable Initialization
+TODO
 
 ### <a name="assignments"></a>Assignments 
 
