@@ -7,7 +7,7 @@
 4. [The `super` keyword (again)](#super-keyword)
 5. [Abstract Classes](#abstract-classes)
 6. [Interfaces](#interfaces)
-7. [Dynamic Method Dispatch](#dmd)
+7. [Dynamic Method Dispatch](#dynamic-method-dispatch)
 8. [Order of Instance Variable Initialization](#instance-initialization-order)
 6. [Assignments](#assignments)
     1. [HackerRank](#hackerrank)
@@ -138,7 +138,7 @@ The first case is particularly useful when you want to use the functionality pro
 ```java
 class Employee {
     ...
-	public double getSalary() {
+    public double getSalary() {
     	return 8.3*(0.5 * yearsOfExperience + 0.8 * referencePoints) + 2.6*(skillPoints);
     }
 }
@@ -149,7 +149,7 @@ class SpecialEmployee extends Employee {
 	...
     // SpecialEmployee only has a small bonus
     // Doing it this way is bad because you are violating DRY
-	public double getSalary() {
+    public double getSalary() {
     	return 8.3*(0.5 * yearsOfExperience + 0.8 * referencePoints) + 2.6*(skillPoints) + 5000;
     }
 }
@@ -160,7 +160,7 @@ class SpecialEmployee extends Employee {
 	...
     // SpecialEmployee only has a small bonus
     // Doing it this way is cleaner
-	public double getSalary() {
+    public double getSalary() {
     	return super.getSalary() + 5000;
     }
 }
@@ -390,7 +390,7 @@ class VolumeCalculator {
 
 Again, an excellent resource is the [Oracle Javadoc for interfaces](https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html)
 
-### <a name="#dmd"></a>Dynamic Method Dispatch
+### <a name="#dynamic-method-dispatch"></a>Dynamic Method Dispatch
 
 Dynamic Method Dispatch is a mechanism by which a call to an overridden method on a parent reference is resolved at runtime.
 
