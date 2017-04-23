@@ -69,11 +69,11 @@ Below is an example of why you want to use `this` as a constructor call:
 
 ```java
 class Point3D {
-	private int x;
+    private int x;
     private int y;
     private int z;
     
-	public Point3D() {
+    public Point3D() {
     	this.x = 0;
         this.y = 0;
         this.z = 0;
@@ -103,11 +103,11 @@ As you can clearly see, this is a violation of the DRY principle; the lines for 
 
 ```java
 class Point3D {
-	private int x;
+    private int x;
     private int y;
     private int z;
     
-	public Point3D() {
+    public Point3D() {
     	this(0, 0, 0);
     }
     
@@ -146,7 +146,7 @@ class Employee {
 
 ```java
 class SpecialEmployee extends Employee {
-	...
+    ...
     // SpecialEmployee only has a small bonus
     // Doing it this way is bad because you are violating DRY
     public double getSalary() {
@@ -157,7 +157,7 @@ class SpecialEmployee extends Employee {
 
 ```java
 class SpecialEmployee extends Employee {
-	...
+    ...
     // SpecialEmployee only has a small bonus
     // Doing it this way is cleaner
     public double getSalary() {
@@ -168,7 +168,7 @@ class SpecialEmployee extends Employee {
 
 ### <a name="#super-keyword-constructor"></a>The `super` keyword as a super-class constructor
 
-In every constructor of a sub class, the first line is an implicit call to the parameterless constructor of the parent class. This is best demonstrated by the following example:
+In every constructor of a sub class, the first line is an _implicit_ call to the parameterless constructor of the parent class. This is best demonstrated by the following example:
 
 ```java
 class A {
@@ -179,6 +179,7 @@ class A {
 
 class B extends A {
 	B() {
+		// An implicit call "super()" exists here
 		System.out.println("In B constructor");
 	}
 }
