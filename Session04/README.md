@@ -16,6 +16,7 @@
 9. [Assignments](#assignments)
     1. [HackerRank](#hackerrank)
     2. [Miscellaneous](#miscellaneous)
+10. [Test](#test)
 
 ### <a name="session3-revise"></a>Revision
 
@@ -214,3 +215,6 @@ In Java, you can use `Arrays.sort` static (overloaded) method from the [Arrays](
 
 #### <a name="miscellaneous"></a>Miscellaneous
 TODO
+
+### <a name="test"></a>Test
+Link: https://www.hackerrank.com/contests/c2c2017-3

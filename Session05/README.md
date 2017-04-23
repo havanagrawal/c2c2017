@@ -140,7 +140,7 @@ The `this` is simply a reference to the object on which this method is called.
 
 #### <a name="inheritance-models"></a>Inheritance Models
 
-![Inheritance Models](https://github.com/havanagrawal/c2c2017/tree/master/Session05/inheritance-models.png)
+![Inheritance Models](https://github.com/havanagrawal/c2c2017/blob/master/Session05/inheritance-models.png)
 
 Out of all of these, multiple inheritance is not supported in Java. This is because it suffers from the [diamond problem](https://en.wikipedia.org/wiki/Multiple_inheritance#The_diamond_problem).
 
@@ -169,7 +169,7 @@ A small access matrix makes it very clear what acccess they provide:
 
 For inheriting from classes, we use the `extends` keyword
 
-This is best seen with an example, which is [here](../blob/master/PointRunner.java).
+This is best seen with an example, which is [here](../Session05/PointRunner.java).
 
 Practice:  
 
@@ -262,6 +262,8 @@ Solve these AFTER you have solved the miscellaneous section, since the classes y
 
 1. https://www.hackerrank.com/challenges/balanced-brackets
 2. https://www.hackerrank.com/challenges/simple-text-editor
+3. https://www.hackerrank.com/challenges/maximum-element
+
 
 #### <a name="miscellaneous"></a>Miscellaneous
 1. Implement a class called `CharStack`. It should have the following methods:
