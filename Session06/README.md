@@ -439,10 +439,13 @@ TODO
 You can read the rules of the game [here](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life#Rules)
 
 Here are some interersting images and gifs from the Wiki page, which make Conway easier to understand (somewhat):
-![Blinker_Oscillator](https://en.wikipedia.org/wiki/File:Game_of_life_blinker.gif)
-![Beacon_Oscillator](https://en.wikipedia.org/wiki/File:Game_of_life_beacon.gif)
-![Block_Still](https://en.wikipedia.org/wiki/File:Game_of_life_block_with_border.svg)
-![Tub_Still](https://en.wikipedia.org/wiki/File:Game_of_life_flower.svg)
+
+![Blinker_Oscillator](https://upload.wikimedia.org/wikipedia/commons/9/95/Game_of_life_blinker.gif)
+![Beacon_Oscillator](https://upload.wikimedia.org/wikipedia/commons/1/1c/Game_of_life_beacon.gif)
+![Toad_Oscillator](https://upload.wikimedia.org/wikipedia/commons/1/12/Game_of_life_toad.gif)
+![Block_Still](https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Game_of_life_block_with_border.svg/66px-Game_of_life_block_with_border.svg.png)
+![Tub_Still](https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Game_of_life_flower.svg/82px-Game_of_life_flower.svg.png)
+
 Try to understand how the above gifs are behaving.
 
 In the file Conway.java, there is an interface. Implement the interface.
