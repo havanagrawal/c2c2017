@@ -7,6 +7,7 @@ Try to solve them without looking it up on the web. First, attempt to come up wi
 ## Table of Contents
 1. [Arrays](#arrays)
 2. [Strings](#strings)
+3. [Recursion](#recursion)
 
 ### <a name="arrays"></a>Arrays
 #### 1. Rotate a 2D array by 90 degrees.
@@ -69,9 +70,7 @@ Output:
 5
 ```
 
-#### 3. Segregate even and odd numbers  
-
-Given an array of integers, arrange the array so that all the odd numbers appear to the left of the array, and all even numbers appear to the right.
+#### 3. Given an array of integers, arrange the array so that all the odd numbers appear to the left of the array, and all even numbers appear to the right.
 Eg:
 Input
 
@@ -103,38 +102,7 @@ Output:
 abcde
 ```
 
-#### 2. Print all combinations of valid pairs of parenthesis of size n
-Eg:
-
-Input:
-
-```
-2
-```
-
-Output:
-
-```
-()()
-(())
-```
-
-Input:
-
-```
-3
-```
-
-Output:
-
-```
-()()()
-(())()
-()(())
-((()))
-```
-
-#### 3. Given a string, find out if duplicate characters exist within k distance.
+#### 2. Given a string, find out if duplicate characters exist within k distance.
 Eg:
 Input:
 
@@ -165,3 +133,40 @@ No
 Explanation:  
 In the first case, the letter c appears within a distance of 2 (indices 2 and 4).  
 In the second case, the letter c appears twice, at indices 2 and 7. Since k is 4, and no other letter is duplicated, the answer is no.
+
+### <a name="recursion"></a> Recursion
+
+#### 1. Print all combinations of valid pairs of parenthesis of size n
+Eg:
+
+Input:
+
+```
+2
+```
+
+Output:
+
+```
+()()
+(())
+```
+
+Input:
+
+```
+3
+```
+
+Output:
+
+```
+()()()
+(())()
+()(())
+((()))
+```
+
+#### 2. Write a recursive function to check if a string is a palindrome or not.
+
+#### 3. Write a recursive function to calculate `a` raised to `b`, with a better-than-linear time complexity.
