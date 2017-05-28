@@ -5,17 +5,15 @@ Since we are resuming after a considerable gap of one month, here is a set of as
 Try to solve them without looking it up on the web. First, attempt to come up with a solution on paper (since these are common interview questions as well), and then try implementing them.
 
 ## Arrays
-1. Rotate a 2D array by 90 degrees.  
+#### 1. Rotate a 2D array by 90 degrees.
 Example:  
 Input:
-
 ```
 1 2 3 4
 5 6 7 8
 9 10 11 12
 13 14 15 16
 ```
-
 Output:
 
 ```
@@ -40,7 +38,7 @@ Output:
 6 3
 ```
 
-2. Given an array of size N-1, with numbers in the range [1, N]. Each number occurs exactly once, with a single number missing. How do you find the missing number?
+#### 2. Given an array of size N-1, with numbers in the range [1, N]. Each number occurs exactly once, with a single number missing. How do you find the missing number?
 Eg: 
 
 Input:
@@ -67,7 +65,7 @@ Output:
 5
 ```
 
-3. Segregate even and odd numbers  
+#### 3. Segregate even and odd numbers  
 
 Given an array of integers, arrange the array so that all the odd numbers appear to the left of the array, and all even numbers appear to the right.
 Eg:
@@ -86,7 +84,7 @@ Output:
 The numbers need not be in the same order. For instance, `1 7 5 3 8 4 2 6` is a valid solution for the above input.
 
 ## Strings
-1. Design an algorithm and write code to remove the duplicate characters in a lowercase alphabet (a-z) string without using *ANY* additional buffer. (This includes arrays of constant size)
+#### 1. Design an algorithm and write code to remove the duplicate characters in a lowercase alphabet (a-z) string without using *ANY* additional buffer. (This includes arrays of constant size)
 
 Eg:   
 Input
@@ -101,7 +99,7 @@ Output:
 abcde
 ```
 
-2. Print all combinations of valid pairs of parenthesis of size n
+#### 2. Print all combinations of valid pairs of parenthesis of size n
 Eg:
 
 Input:
@@ -132,7 +130,7 @@ Output:
 ((()))
 ```
 
-3. Given a string, find out if duplicate characters exist within k distance.
+#### 3. Given a string, find out if duplicate characters exist within k distance.
 Eg:
 Input:
 
@@ -160,6 +158,6 @@ Output:
 No
 ```
 
-Explanation:
-In the first case, the letter c appears within a distance of 2 (indices 2 and 4).
+Explanation:  
+In the first case, the letter c appears within a distance of 2 (indices 2 and 4).  
 In the second case, the letter c appears twice, at indices 2 and 7. Since k is 4, and no other letter is duplicated, the answer is no.
