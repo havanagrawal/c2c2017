@@ -4,7 +4,11 @@ Since we are resuming after a considerable gap of one month, here is a set of as
 
 Try to solve them without looking it up on the web. First, attempt to come up with a solution on paper (since these are common interview questions as well), and then try implementing them.
 
-## Arrays
+## Table of Contents
+1. [Arrays](#arrays)
+2. [Strings](#strings)
+
+### <a name="arrays"></a>Arrays
 #### 1. Rotate a 2D array by 90 degrees.
 Example:  
 Input:
@@ -83,7 +87,7 @@ Output:
 
 The numbers need not be in the same order. For instance, `1 7 5 3 8 4 2 6` is a valid solution for the above input.
 
-## Strings
+### <a name="strings"></a>Strings
 #### 1. Design an algorithm and write code to remove the duplicate characters in a lowercase alphabet (a-z) string without using *ANY* additional buffer. (This includes arrays of constant size)
 
 Eg:   
