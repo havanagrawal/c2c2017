@@ -188,6 +188,11 @@ def partition(a):
 
 At each iteration of a quick sort, the pivot element is put into its rightful place.
 
+
+Again, some fantastic visualization of these algorithms can be found [here](https://visualgo.net/en/sorting) and [here](https://www.cs.usfca.edu/~galles/visualization/ComparisonSort.html).
+
+A comparative visualization can be found [here](https://www.toptal.com/developers/sorting-algorithms/)
+
 ### <a name="assignments"></a>Assignments
 
 #### HackerRank
