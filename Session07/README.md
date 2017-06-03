@@ -215,7 +215,7 @@ A comparative visualization can be found [here](https://www.toptal.com/developer
 17. https://www.hackerrank.com/challenges/closest-numbers
 
 #### Miscellaneous
-1. In the directory "problems", there are multiple sorting implementations. The main driver class is `IntSorterTimer.java`. Try running it, it will fail. Implement the various implementations, i.e. `BubbleSorter.java`, `SelectionSorter.java`, etc. Once you are confident your algorithms are complete, run the `IntSorterTimer` again. If your implementations are correct, you should ideally see something similar to this table:
+1. In the directory [sorting/problems](sorting/problems), there are multiple sorting implementations. The main driver class is `IntSorterTimer.java`. Try running it, it will fail. Implement the various implementations, i.e. `BubbleSorter.java`, `SelectionSorter.java`, etc. Once you are confident your algorithms are complete, run the `IntSorterTimer` again. If your implementations are correct, you should ideally see something similar to this table:
 
 | Sort name/n | bubbleSort | selectionSort | insertionSort | mergeSort |
 |-------------|------------|---------------|---------------|-----------|
@@ -230,3 +230,5 @@ While you may not see the exact same numbers as above, they should have the same
 
 **Tips:**
 Instead of compiling each file separately, you can compile all of them with `javac *.java`
+
+2. In the directory [linkedlist/problems](linkedlist/problems), there is an interface `ILinkedList.java`, and a class `Node.java`. Your job is to implement the interface, by making a class called `LinkedListImpl.java`, and filling out the definition of the Node class as well. Ensure that you handle every possible case for every possible operation, such as empty lists, single element lists, and so on. Use the class `LinkedListImplDriver.java` to test whether your code is correct or not
