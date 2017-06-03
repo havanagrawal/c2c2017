@@ -64,7 +64,7 @@ Since you know that after k iterations, the last k integers are in their rightfu
 
 ```
 for i from 0 until n:
-    for j from i until n-1:
+    for j from 0 until n-i:
         if a[j] > a[j + 1]:
             swap a[j] and a[j + 1]
 ```
@@ -100,6 +100,8 @@ for i from 1 until n:
 
     a[j + 1] = tmp
 ```
+
+Insertion sort is typically useful when you already have a sorted array, and have to insert elements into it.
 
 #### Merge Sort
 
@@ -155,6 +157,8 @@ def merge(left, right):
     return sorted
 ```
 
+Merge sort is a divide-and-conquer sorting algorithm. At each iteration, it divides the array under consideration into two halves, and then recursively applied merge sort on each half. It then merges the two sorted arrays in linear time.
+
 #### Quick Sort
 
 ```
@@ -184,7 +188,7 @@ def partition(a):
 
 At each iteration of a quick sort, the pivot element is put into its rightful place.
 
-### Assignments
+### <a name="assignments"></a>Assignments
 
 #### HackerRank
 1. https://www.hackerrank.com/challenges/print-the-elements-of-a-linked-list-in-reverse
@@ -193,18 +197,17 @@ At each iteration of a quick sort, the pivot element is put into its rightful pl
 4. https://www.hackerrank.com/challenges/merge-two-sorted-linked-lists
 5. https://www.hackerrank.com/challenges/get-the-value-of-the-node-at-a-specific-position-from-the-tail
 6. https://www.hackerrank.com/challenges/delete-duplicate-value-nodes-from-a-sorted-linked-list
-7. https://www.hackerrank.com/challenges/detect-whether-a-linked-list-contains-a-cycle
-8. https://www.hackerrank.com/challenges/tutorial-intro
-9. https://www.hackerrank.com/challenges/insertionsort1
-10. https://www.hackerrank.com/challenges/insertionsort2
-11. https://www.hackerrank.com/challenges/correctness-invariant
-12. https://www.hackerrank.com/challenges/quicksort1
-13. https://www.hackerrank.com/challenges/quicksort2
-14. https://www.hackerrank.com/challenges/quicksort3
-15. https://www.hackerrank.com/challenges/countingsort1
-16. https://www.hackerrank.com/challenges/countingsort2
-17. https://www.hackerrank.com/challenges/countingsort3
-18. https://www.hackerrank.com/challenges/closest-numbers
+7. https://www.hackerrank.com/challenges/tutorial-intro
+8. https://www.hackerrank.com/challenges/insertionsort1
+9. https://www.hackerrank.com/challenges/insertionsort2
+10. https://www.hackerrank.com/challenges/correctness-invariant
+11. https://www.hackerrank.com/challenges/quicksort1
+12. https://www.hackerrank.com/challenges/quicksort2
+13. https://www.hackerrank.com/challenges/quicksort3
+14. https://www.hackerrank.com/challenges/countingsort1
+15. https://www.hackerrank.com/challenges/countingsort2
+16. https://www.hackerrank.com/challenges/countingsort3
+17. https://www.hackerrank.com/challenges/closest-numbers
 
 #### Miscellaneous
 1. In the directory "problems", there are multiple sorting implementations. The main driver class is `IntSorterTimer.java`. Try running it, it will fail. Implement the various implementations, i.e. `BubbleSorter.java`, `SelectionSorter.java`, etc. Once you are confident your algorithms are complete, run the `IntSorterTimer` again. If your implementations are correct, you should ideally see something similar to this table:
