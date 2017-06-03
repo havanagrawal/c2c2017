@@ -209,7 +209,14 @@ At each iteration of a quick sort, the pivot element is put into its rightful pl
 #### Miscellaneous
 1. In the directory "problems", there are multiple sorting implementations. The main driver class is `IntSorterTimer.java`. Try running it, it will fail. Implement the various implementations, i.e. `BubbleSorter.java`, `SelectionSorter.java`, etc. Once you are confident your algorithms are complete, run the `IntSorterTimer` again. If your implementations are correct, you should ideally see something similar to this table:
 
-
+| Sort name/n | bubbleSort | selectionSort | insertionSort | mergeSort |
+|-------------|------------|---------------|---------------|-----------|
+| 1           | 0          | 0             | 0             | 0         |
+| 10          | 0          | 0             | 0             | 0         |
+| 100         | 1          | 0             | 0             | 1         |
+| 1000        | 9          | 4             | 4             | 1         |
+| 10000       | 279        | 24            | 91            | 5         |
+| 100000      | 24091      | 1378          | 3059          | 28        |
 
 While you may not see the exact same numbers as above, they should have the same "relative" performance differences, i.e. merge sort should be _insanely_ faster than the others.
 
