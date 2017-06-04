@@ -13,3 +13,4 @@ Course material and references for Campus To Corporate course, 2017.
 2. [Floating Point Woes](http://www.smbc-comics.com/?id=2999)
 3. [Trees and Heaps](https://xkcd.com/835/)
 4. [Little Bobby Tables](https://xkcd.com/327/)
+5. [Python Rocks](https://xkcd.com/353/)
