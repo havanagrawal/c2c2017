@@ -12,7 +12,6 @@ interface ILinkedList {
     void insertAtHead(Node n);
 
     /** Inserts the given element at the tail of the list
-     * Bonus: Can you make this an O(1) operation?
      */
     void insertAtTail(Node n);
 
@@ -28,7 +27,6 @@ interface ILinkedList {
 
     /** Deletes the element at tail
      * It should return a reference to the deleted node
-     * Bonus: Can you make this an O(1) operation?
      */
     Node deleteTail();
 
