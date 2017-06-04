@@ -231,4 +231,9 @@ While you may not see the exact same numbers as above, they should have the same
 **Tips:**
 Instead of compiling each file separately, you can compile all of them with `javac *.java`
 
-2. In the directory [linkedlist/problems](linkedlist/problems), there is an interface `ILinkedList.java`, and a class `Node.java`. Your job is to implement the interface, by making a class called `LinkedListImpl.java`, and filling out the definition of the Node class as well. Ensure that you handle every possible case for every possible operation, such as empty lists, single element lists, and so on. Use the class `LinkedListImplDriver.java` to test whether your code is correct or not
+2. In the directory [linkedlist/problems](linkedlist/problems), there is an interface `ILinkedList.java`, and a class `Node.java`. Your job is to implement the interface, by making a class called `LinkedListImpl.java`, and filling out the definition of the Node class as well. Ensure that you handle every possible case for every possible operation, such as empty lists, single element lists, and so on. **Write your own driver class to test your implementation**
+
+**Tips:**
+1. Write the class one step (function) at a time, leaving all the others empty, and ensuring every function you write works with all edge cases. Do not fill out all the functions at your first go, because it will get difficult to debug if something is not working.
+2. After you're done, look through the functions and check if you have copy pasted code from one function to another. Check if you have similar logic in more than two functions. Can you re-use other functions from the same class to reduce duplication?
+3. When in doubt, use the [rubber duck](https://en.wikipedia.org/wiki/Rubber_duck_debugging) approach. When still in doubt, email me :)
