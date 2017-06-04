@@ -12,3 +12,4 @@ Course material and references for Campus To Corporate course, 2017.
 1. [Ineffective Sorts](https://xkcd.com/1185/)
 2. [Floating Point Woes](http://www.smbc-comics.com/?id=2999)
 3. [Trees and Heaps](https://xkcd.com/835/)
+4. [Little Bobby Tables](https://xkcd.com/327/)
