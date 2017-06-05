@@ -28,26 +28,26 @@ class IntSorterTimer {
     }
 
     public static long timer(IntSorter sorter, int n) {
-		Random randomGen = new Random();
-		final int MAX = Integer.MAX_VALUE;
-		int[] arr = new int[n];
+        Random randomGen = new Random();
+        final int MAX = Integer.MAX_VALUE;
+        int[] arr = new int[n];
 
-		for (int i = 0; i < n; i++) {
-			arr[i] = randomGen.nextInt(MAX);
-		}
+        for (int i = 0; i < n; i++) {
+            arr[i] = randomGen.nextInt(MAX);
+        }
 
-		long startTime = System.currentTimeMillis();
+        long startTime = System.currentTimeMillis();
         int[] sortedArr = sorter.sort(arr);
-		long endTime = System.currentTimeMillis();
+        long endTime = System.currentTimeMillis();
 
         long timeTakenInMilliseconds = endTime - startTime;
 
-		for (int i = 0; i < arr.length - 1; i++) {
-			if (sortedArr[i] > sortedArr[i + 1]) {
+        for (int i = 0; i < arr.length - 1; i++) {
+            if (sortedArr[i] > sortedArr[i + 1]) {
                 throw new RuntimeException("Your implementation for " + sorter.getClass() + " is faulty!");
             }
-		}
+        }
 
-		return timeTakenInMilliseconds;
-	}
+        return timeTakenInMilliseconds;
+    }
 }
