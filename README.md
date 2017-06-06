@@ -10,7 +10,11 @@ Course material and references for Campus To Corporate course, 2017.
 ## Some Geeky Fun
 
 1. [Ineffective Sorts](https://xkcd.com/1185/)
-2. [Floating Point Woes](http://www.smbc-comics.com/?id=2999)
-3. [Trees and Heaps](https://xkcd.com/835/)
-4. [Little Bobby Tables](https://xkcd.com/327/)
-5. [Python Rocks](https://xkcd.com/353/)
+2. [Some More Sorts](https://threepanel.com/t/cube-drone/18/159)
+3. [Floating Point Woes](http://www.smbc-comics.com/?id=2999)
+4. [Trees and Heaps](https://xkcd.com/835/)
+5. [Little Bobby Tables](https://xkcd.com/327/)
+6. [Python Rocks](https://xkcd.com/353/)
+7. [Don't Use Gotos](https://xkcd.com/292/)
+8. [Real Life Applications of Subset Sum](https://xkcd.com/287/)
+
