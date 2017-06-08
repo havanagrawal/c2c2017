@@ -7,6 +7,12 @@ Course material and references for Campus To Corporate course, 2017.
 2. [Interactive Data Structure and Algorithm Visualizations](https://visualgo.net/en)
 3. [A Comparative Visualization of Sorting Algorithms](https://www.toptal.com/developers/sorting-algorithms/)
 
+## Other Interesting GitHub Repos
+
+1. https://github.com/sdmg15/Best-websites-a-programmer-should-visit (Especially the "Interview Preparation" and "General Coding advice" sections)
+2. https://github.com/kdn251/interviews
+3. https://github.com/alex/what-happens-when
+
 ## Some Geeky Fun
 
 1. [Ineffective Sorts](https://xkcd.com/1185/)
