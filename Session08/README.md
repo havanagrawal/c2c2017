@@ -1,7 +1,7 @@
 # Session 8
 
 ## Table of Contents
-1. [The Collection Framework - Part I](#cfw)
+1. [The Collections Framework - Part I](#cfw)
     1. [The Collection Hierarchy](#hierarchy)
     2. [Lists, Queues and Sets](#list-queue-set)
     3. [Problems](#cfw-problems)
@@ -12,9 +12,11 @@
     1. [HackerRank](#hackerrank)
     2. [Miscellaneous](#miscellaneous)
 
-### <a name="cfw"></a>The Collection Framework
+### <a name="cfw"></a>The Collections Framework
 
-#### <a name="hierarchy"></a>The Collection Hierarchy
+#### <a name="hierarchy"></a>The Collection Hierarchy (Part I)
+
+![The Collection FrameWork Hierarchy](http://4.bp.blogspot.com/-DvsfKh9clI0/UU3sK7J17jI/AAAAAAAAARU/VnHJDjImzw4/s1600/java-collection-hierarchy.png)
 
 #### <a name="list-queue-set"></a>Lists, Queues and Sets
 
@@ -36,7 +38,9 @@ sentences
 backwards
 creates
 ```
+
 2. Can you modify the above code to print the words out in alphabetical order?
+
 3. Given two sorted lists of integers of size n and m, create a new list that contains all the integers in sorted order.  
 Input:  
 ```
@@ -61,6 +65,7 @@ Output:
 12
 16
 ```
+
 4. You are given a list of n numbers in no particular order. For each number, print out the next highest number in the list. If there is no such number, print -1.  
 Input:  
 ```
@@ -71,12 +76,13 @@ Output:
 ```
 4 6 6 6 9 9 -1 -1
 ```
-Explanation:
-For 1, the next highest number in the list is 4.  
-For 4, 2 and 3 the next highest number in the list is 6.  
-For 6 and 5 the next highest number in the list is 9.  
-For 9, there is no next highest number.  
-For 4, there is no next highest number.  
+Explanation:  
+    1. For 1, the next highest number in the list is 4.  
+    2. For 4, 2 and 3 the next highest number in the list is 6.  
+    3. For 6 and 5 the next highest number in the list is 9.  
+    4. For 9, there is no next highest number.  
+    5. For 4, there is no next highest number.  
+    
 5. You are given a list of n chess moves. Each move is a string, and can be either:
     1. Any string, such as "c5", "Be6", "Nf3", etc.
     2. "undo".
