@@ -4,7 +4,7 @@
 1. [The Collections Framework - Part I](#cfw)
     1. [The Collection Hierarchy](#hierarchy)
     2. [Lists, Queues and Sets](#list-queue-set)
-    3. [Problems](#cfw-problems)
+    3. [Problems](#cfwproblems)
 2. [Trees](#trees)
     1. [Binary Trees](#binary-trees)
     2. [Binary Search Trees](#bst)
@@ -20,7 +20,7 @@
 
 #### <a name="list-queue-set"></a>Lists, Queues and Sets
 
-#### <a name="cfw-problems"></a>Problems
+#### <a name="cfwproblems"></a>Problems
 
 1. You are given a long list of space separated words. There may be duplicates. Print the list of unique words, each one on a newline that appear in the previous list. It is **not** necessary to print them in the same order as they appeared in the list.  
    Input:
