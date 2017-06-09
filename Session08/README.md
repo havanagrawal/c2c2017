@@ -87,25 +87,25 @@
     1. Any string, such as "c5", "Be6", "Nf3", etc.
     2. "undo".
     3. "print"  
-After each print command, print all the moves made till now in a space separated manner.  
-In case the move is "undo", undo the last move.
-Input:  
-```
-7
-c5
-print
-Be6
-Nf3
-print
-undo
-print
-```
-Output:
-```
-c5
-c5 Be6 Nf3
-c5 Be6
-```
+   After each print command, print all the moves made till now in a space separated manner.  
+   In case the move is "undo", undo the last move.
+   Input:  
+   ```
+   7
+   c5
+   print
+   Be6
+   Nf3
+   print
+   undo
+   print
+   ```
+   Output:
+   ```
+   c5
+   c5 Be6 Nf3
+   c5 Be6
+   ```
 
 
 ### <a name="trees"></a>Trees
