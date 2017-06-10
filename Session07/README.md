@@ -223,8 +223,8 @@ A comparative visualization can be found [here](https://www.toptal.com/developer
 | 10          | 0          | 0             | 0             | 0         |
 | 100         | 1          | 0             | 0             | 1         |
 | 1000        | 9          | 4             | 4             | 1         |
-| 10000       | 279        | 24            | 91            | 5         |
-| 100000      | 24091      | 1378          | 3059          | 28        |
+| 10000       | 279        | 91            | 24            | 5         |
+| 100000      | 24091      | 3059          | 1378          | 28        |
 
 While you may not see the exact same numbers as above, they should have the same "relative" performance differences, i.e. merge sort should be _insanely_ faster than the others.
 
