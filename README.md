@@ -24,4 +24,5 @@ Course material and references for Campus To Corporate course, 2017.
 6. [Python Rocks](https://xkcd.com/353/)
 7. [Don't Use Gotos](https://xkcd.com/292/)
 8. [Real Life Applications of Subset Sum](https://xkcd.com/287/)
+9. [Peer Reviews](https://xkcd.com/1513/)
 
