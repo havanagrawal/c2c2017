@@ -14,11 +14,22 @@
 
 ### <a name="cfw"></a>The Collections Framework
 
+The collection framework is a set of interfaces, implementations and algorithms, that allow you to store, retrieve, manipulate, and communicate aggregate data.
+
+An excellent guide to the CFW is [Oracle's Tutorial](https://docs.oracle.com/javase/tutorial/collections/intro/)
+
 #### <a name="hierarchy"></a>The Collection Hierarchy (Part I)
 
 ![The Collection FrameWork Hierarchy](http://4.bp.blogspot.com/-DvsfKh9clI0/UU3sK7J17jI/AAAAAAAAARU/VnHJDjImzw4/s1600/java-collection-hierarchy.png)
 
 #### <a name="list-queue-set"></a>Lists, Queues and Sets
+
+For any collection, the most important resource is the JavaDoc. This will tell you everything you need to know about the class, right from constructors, methods and implementation details.
+
+List: https://docs.oracle.com/javase/7/docs/api/java/util/List.html  
+Queue: https://docs.oracle.com/javase/7/docs/api/java/util/Queue.html  
+Set: http://docs.oracle.com/javase/7/docs/api/java/util/Set.html
+ 
 
 #### <a name="cfwproblems"></a>Problems
 
