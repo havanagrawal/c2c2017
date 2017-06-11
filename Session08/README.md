@@ -84,7 +84,7 @@
      * For 6 and 5 the next highest number in the list is 9.  
      * For 9, there is no next highest number.  
      * For 4, there is no next highest number.  
-    
+
 5. You are given a list of n chess moves. Each move is a string, and can be either:
     1. Any string, such as "c5", "Be6", "Nf3", etc.
     2. "undo".
@@ -137,3 +137,8 @@ Problems:
 6. https://www.hackerrank.com/challenges/binary-search-tree-lowest-common-ancestor
 
 #### <a name="miscellaneous"></a>Miscellaneous
+
+1. In the directory [binarytree/problems](binarytree/problems), there is an abstract class `BinaryTree`, and a concrete class `BinarySearchTree`. You need to fill in the missing methods, and *write a driver program to ensure that your implementation is correct*. A `TreeNode` class has already been provided for you.  
+When reading the code, try to appreciate and understand how an abstract class is being used to provide a default implementation for some of the methods. In particular, think about these points:
+   1. Why is `BinaryTree` abstract?  
+   2. Why are the methods `insert`, `delete`, `search` and `lowestCommonAncestor` abstract?
