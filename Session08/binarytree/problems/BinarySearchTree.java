@@ -1,3 +1,4 @@
+// This class fails to compile, can you figure out why, and fix it?
 class BinarySearchTree extends BinaryTree {
 
 	@Override
