@@ -78,7 +78,9 @@
    ```
    Explanation:  
      * For 1, the next highest number in the list is 4.  
-     * For 4, 2 and 3 the next highest number in the list is 6.  
+     * For 4 the next highest number in the list is 6.  
+     * For 2 the next highest number in the list is 3.
+     * For 3, the next highest number inthe list is 6.
      * For 6 and 5 the next highest number in the list is 9.  
      * For 9, there is no next highest number.  
      * For 4, there is no next highest number.  
