@@ -125,17 +125,27 @@ Set: http://docs.oracle.com/javase/7/docs/api/java/util/Set.html
 
 #### <a name="binary-trees"></a>Binary Trees
 
+Binary Trees are a class of tree data structures, with the following property: *Each node may have a maximum of two children.*
+
+Binary Trees by themselves are typically not very useful. By applying additional constraints on top of them, the can be given useful properties. Some examples of binary trees are:
+1. Binary Search Trees  
+2. Heaps
+3. Treaps
+
 Problems:
 1. https://www.hackerrank.com/challenges/tree-preorder-traversal
 2. https://www.hackerrank.com/challenges/tree-postorder-traversal
 3. https://www.hackerrank.com/challenges/tree-inorder-traversal
 4. https://www.hackerrank.com/challenges/tree-height-of-a-binary-tree
-5. https://www.hackerrank.com/challenges/tree-top-view
 
 #### <a name="bst"></a>Binary Search Trees
 
-Problems:
-1. https://www.hackerrank.com/challenges/is-binary-search-tree
+A Binary Search Tree (a.k.a BST) is a type of Binary Tree, which has the following constraints added to it:
+1. The left subtree of the root node MUST have values less than the root node's value.
+2. The right subtree of the root node MUST have values greater than the root node's value.
+3. The left and right subtrees must be valid binary search trees.
+
+A binary search tree gives you O(log(n)) access to any element, similar to using binary search in a sorted array.
 
 ### <a name="assignments"></a>Assignments
 
@@ -143,9 +153,12 @@ Problems:
 1. https://www.hackerrank.com/challenges/java-list
 2. https://www.hackerrank.com/challenges/java-stack
 3. https://www.hackerrank.com/challenges/java-hashset
-4. https://www.hackerrank.com/challenges/maximum-element
-5. https://www.hackerrank.com/challenges/simple-text-editor
-6. https://www.hackerrank.com/challenges/binary-search-tree-lowest-common-ancestor
+4. https://www.hackerrank.com/challenges/tree-top-view
+5. https://www.hackerrank.com/challenges/binary-search-tree-lowest-common-ancestor
+6. https://www.hackerrank.com/challenges/binary-search-tree-insertion
+7. https://www.hackerrank.com/challenges/is-binary-search-tree
+8. https://www.hackerrank.com/challenges/maximum-element (solve using a CFW class)
+9. https://www.hackerrank.com/challenges/simple-text-editor (solve using a CFW class)
 
 #### <a name="miscellaneous"></a>Miscellaneous
 
