@@ -85,7 +85,7 @@ Set: http://docs.oracle.com/javase/7/docs/api/java/util/Set.html
    ```
    Output:  
    ```
-   4 6 6 6 9 9 -1 -1
+   4 6 3 6 9 9 -1 -1
    ```
    Explanation:  
      * For 1, the next highest number in the list is 4.  
