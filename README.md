@@ -26,3 +26,6 @@ Course material and references for Campus To Corporate course, 2017.
 8. [Real Life Applications of Subset Sum](https://xkcd.com/287/)
 9. [Peer Reviews](https://xkcd.com/1513/)
 
+## Motivation
+
+1. [What Most Schools Don't Teach](https://www.youtube.com/watch?v=nKIu9yen5nc)
