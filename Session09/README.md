@@ -142,11 +142,11 @@ Note that both the algorithms are identical, except for a single data structure 
 5. Study and implement [Djikstra's algorithm](https://www.hackerearth.com/practice/notes/dijkstras-algorithm/) for the shortest path in a weighted, directed graph. (It is pronounced as Dyke-stra)
 
 #### <a name="gfg-graphs"></a>An Extensive List of Graph Topics
-Go through the topic list for the [Graph section at GeeksForGeeks](http://www.geeksforgeeks.org/graph-data-structure-and-algorithms/), and read the following topics thoroughly:
-    1. Introduction, DFS and BFS
-    2. Detecting cycles
-    3. Topological sorting
-    4. Minimum Spanning Tree (Either of Prim/Kruskal should suffice)
-    5. n-Queen and Knight's tour problems
-    6. m Coloring problem
-    7. Finding the number of islands (This can be rephrased in a lot of different ways, for example, see [this](https://en.wikipedia.org/wiki/Connected-component_labeling))
+Go through the topic list for the [Graph section at GeeksForGeeks](http://www.geeksforgeeks.org/graph-data-structure-and-algorithms/), and read the following topics thoroughly:  
+1. Introduction, DFS and BFS
+2. Detecting cycles
+3. Topological sorting
+4. Minimum Spanning Tree (Either of Prim/Kruskal should suffice)
+5. n-Queen and Knight's tour problems
+6. m Coloring problem
+7. Finding the number of islands (This can be rephrased in a lot of different ways, for example, see [this](https://en.wikipedia.org/wiki/Connected-component_labeling))
