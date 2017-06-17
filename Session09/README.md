@@ -60,7 +60,7 @@ class Graph {
 ```
 
 2. Adjacency Lists - Each Vertex maintains a list of its adjacent vertices  
-```java
+```java  
 class Vertex {
     Set<Vertex> neighbors;
 
@@ -87,7 +87,37 @@ class Graph {
 
 1. Breadth First Search
 
-   This is typically used to find the shortest path from one node to another, or to search for a particular node.
+   This is typically used to find the shortest path from one node to another, or to search for a particular node. The following psuedo code is a general piece of code that you can use for any application of the algorithm
    ```
-   
+   bfs(Graph g, source s)
+        Let Q be a queue
+        Let visited be a set
+
+        Q.enqueue(s)
+        put s into the visited set
+
+        while Q is not empty:
+            current = Q.dequeue()
+            for all neighbors x of current:
+                Q.enqueue(x)
+                put x into the visited set
    ```
+   BFS will always visit vertices at a particular depth i before all vertices at depth > i.
+
+2. Depth First Search
+
+    This is typically used for backtracking algorithms. One of the most popular problems solved by using DFS is the n-Queen problem.
+    ```
+    dfs(Graph g, source s)
+        Let St be a stack
+        Let visited be a set
+
+        St.push(s)
+        Put s into the visited set
+
+        while St is not empty:
+            current = St.pop()
+            for all neighbors x of current:
+                St.push(x)
+                put x into the visited set
+    ```
