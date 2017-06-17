@@ -18,6 +18,10 @@
 
 ### <a name="cfw"></a>The Collections Framework - Part 2
 
+#### <a name="maps"></a>Maps
+
+#### <a name="cfwproblems"></a>Problems
+
 ### <a name="graphs"></a>Graphs
 A graph is a set of finite set of vertices, along with edges that connect these vertices.
 
@@ -82,6 +86,7 @@ class Graph {
 
 1. Indegree - The number of vertices from which this vertex is reachable
 2. Outdegree - The number of vertices reachable from this vertex
+3. Sink Vertex - A vertex with outdegree = 0
 
 #### <a name="traversals"></a>Traversals
 
@@ -121,3 +126,27 @@ class Graph {
                 St.push(x)
                 put x into the visited set
     ```
+
+Note that both the algorithms are identical, except for a single data structure choice (queue vs stack)
+
+#### <a name="problems">Problems
+1. One of the constraints on using an adjacency matrix as a choice of representation of a graph is that the vertices have to be numbered. Can you think of a similar solution if the vertices are not numbered (A, B, C instead of 1,2,3)?
+2. Come up with at least three examples for each combination of weighted/unweighted and directed/undirected graphs, i.e. you should have a total of 12 examples. (You're free to use Google search, the idea is to be aware of various applications)
+3. Implement the BFS algorithm for an unweighted, undirected graph. It should accept an adjacency matrix, a source vertex, and a goal vertex. It should print out three things:
+    a. Whether or not the goal vertex is reachable from the source vertex
+    b. The distance to be traversed to reach the goal vertex (if the goal vertex is indeed reachable)
+    c. The shortest path from the source vertex to the goal vertex.
+
+    Write your code step by step, using the pseudo code above as a starting point. Think and reason about whether your algorithm would work for directed graphs as well. Then try it out.
+4. Implement the DFS algorithm for an unweighted, undirected graph, to determine whether or not there are cycles in the graph. (Hint: you will ALWAYS encounter a vertex that is already on the stack in case there is a cycle)
+5. Study and implement [Djikstra's algorithm](https://www.hackerearth.com/practice/notes/dijkstras-algorithm/) for the shortest path in a weighted, directed graph. (It is pronounced as Dyke-stra)
+
+#### <a name="gfg-graphs"></a>An Extensive List of Graph Topics
+Go through the topic list for the [Graph section at GeeksForGeeks](http://www.geeksforgeeks.org/graph-data-structure-and-algorithms/), and read the following topics thoroughly:
+    1. Introduction, DFS and BFS
+    2. Detecting cycles
+    3. Topological sorting
+    4. Minimum Spanning Tree (Either of Prim/Kruskal should suffice)
+    5. n-Queen and Knight's tour problems
+    6. m Coloring problem
+    7. Finding the number of islands (This can be rephrased in a lot of different ways, for example, see [this](https://en.wikipedia.org/wiki/Connected-component_labeling))
