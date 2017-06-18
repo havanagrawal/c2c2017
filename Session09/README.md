@@ -66,8 +66,24 @@ A simple visualization of the internal structure of the HashMap is:
 
 ![HashMap internal structure](https://infinitescript.com/wordpress/wp-content/uploads/2014/09/HashMap-Structure.png)
 
+Sample usage:
+
+```java
+// A map from name to house
+HashMap<String, String> gotHouses = new HashMap<>();
+hm.put("jaime", "lannister");
+hm.put("robert", "baratheon");
+hm.put("theon", "greyjoy");
+hm.put("bran", "stark");
+hm.put("ned", "stark"); // RIP
+
+System.out.println(hm.get("theon"));    // greyjoy
+System.out.println(hm.get("thoros"));   // null
+```
+
 #### <a name="cfwproblems"></a>Problems
 1. https://www.codechef.com/problems/MIME2
+
 ### <a name="graphs"></a>Graphs
 A graph is a set of finite set of vertices, along with edges that connect these vertices.
 
