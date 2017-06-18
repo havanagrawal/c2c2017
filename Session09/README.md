@@ -1,10 +1,11 @@
 # Session 9
 
 ## Table of Contents
-1. [The Collections Framework - Part II](#cfw)
+1. [The Object Class, `equals` and `hashCode`](#object)
+2. [The Collections Framework - Part II](#cfw)
     1. [Maps!](#maps)
-    3. [Problems](#cfwproblems)
-2. [Graphs](#graphs)
+    2. [Problems](#cfwproblems)
+3. [Graphs](#graphs)
     1. [Applications](#applications)
     2. [Classification](#classification)
     3. [Representation](#representation)
@@ -12,16 +13,61 @@
     5. [Traversals and Algorithms](#traversals)
     6. [Problems](#problems)
     7. [An Extensive List of Graph Topics](#gfg-graphs)
-3. [Assignments](#assignments)
+4. [Assignments](#assignments)
     1. [HackerRank](#hackerrank)
     2. [Miscellaneous](#miscellaneous)
+
+### <a name="object"></a>The Object Class, `equals` and `hashCode`
 
 ### <a name="cfw"></a>The Collections Framework - Part 2
 
 #### <a name="maps"></a>Maps
 
-#### <a name="cfwproblems"></a>Problems
+Maps are know by various names in different contexts/languages; dictionaries, associative arrays, symbol table, etc. It is simply a **collection** of key-value pairs.
 
+Maps are not part of the Iterable-Collection *hierarchy*, but they are still part of the framework.
+
+A Map is internally implemented as an array of buckets. Each buckets is in itself a linked list (though this detail can change for the sake of efficient, e.g. a bst instead of a linked list).
+
+Each key-value pair in the bucket is stored as an `Entry`. The entry class looks something like this:
+
+```java
+private static class Entry<K,V> implements Map.Entry<K,V> {
+     final K key;
+     final int hash;
+     V value;
+     Entry<K,V> next;
+}
+```
+
+You can clearly make out the linked list nature of the Entry class because of the `Entry<K,V> next` field.
+
+There are two main operations that you typically perform on a Map:
+
+1. put(key, value)
+    When you call the `put` method, the following steps occur:
+        1. The hash of the key is calculated using the `hashCode()` method
+        2. An index `i` is derived from the resulting hash.
+        3. An instance of the `Entry` class (e) is created, with the relevant fields.
+        3. If there is no entry at the array location `i`, the instance e is set at the location.
+        4. If these *is* an entry at the array location `i`, then:
+            1. If the key passed to the put method as an argument is `equal` to the key of the existing entry, then the value is updated, and the old value is returned.
+            2. If the key passed to the put method as an argument is *not* `equal` to the key of the existing entry, then the instance e is appended to the linked list.
+
+2. get(key)
+    When you call the `get` method, the following steps occur:
+        1. The hash of the key is calculated using the `hashCode()` method
+        2. An index `i` is derived from the resulting hash.
+        3. A linear search for the key is conducted in the linked list at the location `i`, with `equals` being used to determine if the element is found or not.
+        4. If no element exists in the Map with this key, null is returned.
+
+
+A simple visualization of the internal structure of the HashMap is:
+
+![HashMap internal structure](https://infinitescript.com/wordpress/wp-content/uploads/2014/09/HashMap-Structure.png)
+
+#### <a name="cfwproblems"></a>Problems
+1. https://www.codechef.com/problems/MIME2
 ### <a name="graphs"></a>Graphs
 A graph is a set of finite set of vertices, along with edges that connect these vertices.
 
