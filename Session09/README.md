@@ -81,6 +81,8 @@ System.out.println(houseMap.get("theon"));    // greyjoy
 System.out.println(houseMap.get("thoros"));   // null
 ```
 
+As usual, one of the best places to understand Maps is the [JavaDocs](https://docs.oracle.com/javase/7/docs/api/java/util/Map.html)
+
 #### <a name="cfwproblems"></a>Problems
 1. https://www.codechef.com/problems/MIME2
 
