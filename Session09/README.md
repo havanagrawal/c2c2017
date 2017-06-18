@@ -44,22 +44,22 @@ You can clearly make out the linked list nature of the Entry class because of th
 
 There are two main operations that you typically perform on a Map:
 
-1. put(key, value)
+1. put(key, value)  
     When you call the `put` method, the following steps occur:
-        1. The hash of the key is calculated using the `hashCode()` method
-        2. An index `i` is derived from the resulting hash.
-        3. An instance of the `Entry` class (e) is created, with the relevant fields.
-        3. If there is no entry at the array location `i`, the instance e is set at the location.
-        4. If these *is* an entry at the array location `i`, then:
-            1. If the key passed to the put method as an argument is `equal` to the key of the existing entry, then the value is updated, and the old value is returned.
-            2. If the key passed to the put method as an argument is *not* `equal` to the key of the existing entry, then the instance e is appended to the linked list.
+    1. The hash of the key is calculated using the `hashCode()` method  
+    2. An index `i` is derived from the resulting hash.  
+    3. An instance of the `Entry` class (e) is created, with the relevant fields.  
+    3. If there is no entry at the array location `i`, the instance e is set at the location.  
+    4. If these *is* an entry at the array location `i`, then:  
+        1. If the key passed to the put method as an argument is `equal` to the key of the existing entry, then the value is updated, and the old value is returned.  
+        2. If the key passed to the put method as an argument is *not* `equal` to the key of the existing entry, then the instance e is appended to the linked list.
 
-2. get(key)
+2. get(key)  
     When you call the `get` method, the following steps occur:
-        1. The hash of the key is calculated using the `hashCode()` method
-        2. An index `i` is derived from the resulting hash.
-        3. A linear search for the key is conducted in the linked list at the location `i`, with `equals` being used to determine if the element is found or not.
-        4. If no element exists in the Map with this key, null is returned.
+    1. The hash of the key is calculated using the `hashCode()` method  
+    2. An index `i` is derived from the resulting hash.  
+    3. A linear search for the key is conducted in the linked list at the location `i`, with `equals` being used to determine if the element is found or not.  
+    4. If no element exists in the Map with this key, null is returned.
 
 
 A simple visualization of the internal structure of the HashMap is:
