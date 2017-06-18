@@ -70,15 +70,15 @@ Sample usage:
 
 ```java
 // A map from name to house
-HashMap<String, String> gotHouses = new HashMap<>();
-hm.put("jaime", "lannister");
-hm.put("robert", "baratheon");
-hm.put("theon", "greyjoy");
-hm.put("bran", "stark");
-hm.put("ned", "stark"); // RIP
+HashMap<String, String> houseMap = new HashMap<>();
+houseMap.put("jaime", "lannister");
+houseMap.put("robert", "baratheon");
+houseMap.put("theon", "greyjoy");
+houseMap.put("bran", "stark");
+houseMap.put("ned", "stark"); // RIP
 
-System.out.println(hm.get("theon"));    // greyjoy
-System.out.println(hm.get("thoros"));   // null
+System.out.println(houseMap.get("theon"));    // greyjoy
+System.out.println(houseMap.get("thoros"));   // null
 ```
 
 #### <a name="cfwproblems"></a>Problems
