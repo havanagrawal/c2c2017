@@ -150,3 +150,31 @@ Go through the topic list for the [Graph section at GeeksForGeeks](http://www.ge
 5. n-Queen and Knight's tour problems
 6. m Coloring problem
 7. Finding the number of islands (This can be rephrased in a lot of different ways, for example, see [this](https://en.wikipedia.org/wiki/Connected-component_labeling))
+
+### <a name="assignments"></a>Assignments
+
+#### <a name="hackerrank"></a>HackerRank
+1. https://www.hackerrank.com/challenges/phone-book
+2. https://www.hackerrank.com/challenges/bfsshortreach
+3. https://www.hackerrank.com/challenges/the-quickest-way-up
+
+#### <a name="miscellaneous"></a>Miscellaneous
+1. Companies have several positions that an employee can be at. Employees at the same position get the same salary. Given a list of employees and their salaries, you have to determine how many positions are there at a given company. The input spec is as follows:
+    1. The first line is a number (say N)
+    2. N lines follow. Each line contains the name of an employee, and his salary (space separated). The salary may range from 10^5 to 10^9.
+    3. Display the number of positions at this company
+2. You have probably heard of the mobile application called TrueCaller. By looking at a phone number, it tells you who is calling. It works like a reverse look-up phone directory.
+You have been asked to implement this application.
+    1. The first line is a number (say N)
+    2. N lines follow
+    3. Each line contains a String denoting the name of a person (which may have spaces) and his/her number in a space separated manner
+    4. Store the names and numbers
+    5. Now start a menu-driven flow to:
+        1. Accept a number from the user
+            1. If the number has a name associated with it, display it
+            2. If it does not, inform the user that it does not exist, and give him the option to provide a name. Store the name and number.
+        2. Display the entire reverse mapping, in the following format:
+            1. Number1: Name
+            2. Number2: Name
+        3. Change a particular phone number’s owner
+        4. Quit the program
