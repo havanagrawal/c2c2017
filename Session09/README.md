@@ -19,6 +19,10 @@
 
 ### <a name="object"></a>The Object Class, `equals` and `hashCode`
 
+1. [The Object class](https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html)
+2. [hashCode](https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html#hashCode())
+3. [equals](https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html#equals(java.lang.Object))
+
 ### <a name="cfw"></a>The Collections Framework - Part 2
 
 #### <a name="maps"></a>Maps
