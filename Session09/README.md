@@ -201,9 +201,9 @@ Note that both the algorithms are identical, except for a single data structure 
 1. One of the constraints on using an adjacency matrix as a choice of representation of a graph is that the vertices have to be numbered. Can you think of a similar solution if the vertices are not numbered (A, B, C instead of 1,2,3)?
 2. Come up with at least three examples for each combination of weighted/unweighted and directed/undirected graphs, i.e. you should have a total of 12 examples. (You're free to use Google search, the idea is to be aware of various applications)
 3. Implement the BFS algorithm for an unweighted, undirected graph. It should accept an adjacency matrix, a source vertex, and a goal vertex. It should print out three things:
-    a. Whether or not the goal vertex is reachable from the source vertex
-    b. The distance to be traversed to reach the goal vertex (if the goal vertex is indeed reachable)
-    c. The shortest path from the source vertex to the goal vertex.
+    1. Whether or not the goal vertex is reachable from the source vertex
+    2. The distance to be traversed to reach the goal vertex (if the goal vertex is indeed reachable)
+    3. The shortest path from the source vertex to the goal vertex.
 
     Write your code step by step, using the pseudo code above as a starting point. Think and reason about whether your algorithm would work for directed graphs as well. Then try it out.
 4. Implement the DFS algorithm for an unweighted, undirected graph, to determine whether or not there are cycles in the graph. (Hint: you will ALWAYS encounter a vertex that is already on the stack in case there is a cycle)
