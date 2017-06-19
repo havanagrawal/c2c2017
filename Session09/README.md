@@ -27,11 +27,11 @@
 
 #### <a name="maps"></a>Maps
 
-Maps are know by various names in different contexts/languages; dictionaries, associative arrays, symbol table, etc. It is simply a **collection** of key-value pairs.
+Maps are known by various names in different contexts/languages; dictionaries, associative arrays, symbol table, etc. It is simply a **collection** of key-value pairs.
 
 Maps are not part of the Iterable-Collection *hierarchy*, but they are still part of the framework.
 
-A Map is internally implemented as an array of buckets. Each buckets is in itself a linked list (though this detail can change for the sake of efficient, e.g. a bst instead of a linked list).
+A Map is internally implemented as an array of buckets. Each buckets is in itself a linked list (though this detail can change for the sake of efficiency, e.g. a bst instead of a linked list).
 
 Each key-value pair in the bucket is stored as an `Entry`. The entry class looks something like this:
 
@@ -50,19 +50,19 @@ There are two main operations that you typically perform on a Map:
 
 1. put(key, value)  
     When you call the `put` method, the following steps occur:
-    1. The hash of the key is calculated using the `hashCode()` method  
+    1. The hash of the key is calculated using the `hashCode()` method.   
     2. An index `i` is derived from the resulting hash.  
-    3. An instance of the `Entry` class (e) is created, with the relevant fields.  
+    3. An instance of the `Entry` class (e) is created, with the relevant fields.   
     3. If there is no entry at the array location `i`, the instance e is set at the location.  
-    4. If these *is* an entry at the array location `i`, then:  
+    4. If there *is* an entry at the array location `i`, then:  
         1. If the key passed to the put method as an argument is `equal` to the key of the existing entry, then the value is updated, and the old value is returned.  
         2. If the key passed to the put method as an argument is *not* `equal` to the key of the existing entry, then the instance e is appended to the linked list.
 
 2. get(key)  
     When you call the `get` method, the following steps occur:
-    1. The hash of the key is calculated using the `hashCode()` method  
+    1. The hash of the key is calculated using the `hashCode()` method.  
     2. An index `i` is derived from the resulting hash.  
-    3. A linear search for the key is conducted in the linked list at the location `i`, with `equals` being used to determine if the element is found or not.  
+    3. A linear search for the key is conducted in the linked list at the location `i`, with `equals()` being used to determine if the element is found or not.  
     4. If no element exists in the Map with this key, null is returned.
 
 
@@ -171,7 +171,7 @@ class Graph {
 
         while Q is not empty:
             current = Q.dequeue()
-            for all neighbors x of current:
+            for all unvisited neighbors x of current:
                 Q.enqueue(x)
                 put x into the visited set
    ```
@@ -190,7 +190,7 @@ class Graph {
 
         while St is not empty:
             current = St.pop()
-            for all neighbors x of current:
+            for all unvisited neighbors x of current:
                 St.push(x)
                 put x into the visited set
     ```
@@ -200,11 +200,10 @@ Note that both the algorithms are identical, except for a single data structure 
 #### <a name="problems">Problems
 1. One of the constraints on using an adjacency matrix as a choice of representation of a graph is that the vertices have to be numbered. Can you think of a similar solution if the vertices are not numbered (A, B, C instead of 1,2,3)?
 2. Come up with at least three examples for each combination of weighted/unweighted and directed/undirected graphs, i.e. you should have a total of 12 examples. (You're free to use Google search, the idea is to be aware of various applications)
-3. Implement the BFS algorithm for an unweighted, undirected graph. It should accept an adjacency matrix, a source vertex, and a goal vertex. It should print out three things:
-    a. Whether or not the goal vertex is reachable from the source vertex
-    b. The distance to be traversed to reach the goal vertex (if the goal vertex is indeed reachable)
-    c. The shortest path from the source vertex to the goal vertex.
-
+3. Implement the BFS algorithm for an unweighted, undirected graph. It should accept an adjacency matrix, a source vertex, and a goal vertex.It should print out three things:  
+    1. Whether or not the goal vertex is reachable from the source vertex  
+    2. The distance to be traversed to reach the goal vertex (if the goal vertex is indeed reachable)  
+    3. The shortest path from the source vertex to the goal vertex
     Write your code step by step, using the pseudo code above as a starting point. Think and reason about whether your algorithm would work for directed graphs as well. Then try it out.
 4. Implement the DFS algorithm for an unweighted, undirected graph, to determine whether or not there are cycles in the graph. (Hint: you will ALWAYS encounter a vertex that is already on the stack in case there is a cycle)
 5. Study and implement [Djikstra's algorithm](https://www.hackerearth.com/practice/notes/dijkstras-algorithm/) for the shortest path in a weighted, directed graph. (It is pronounced as Dyke-stra)
@@ -229,7 +228,7 @@ Go through the topic list for the [Graph section at GeeksForGeeks](http://www.ge
 #### <a name="miscellaneous"></a>Miscellaneous
 1. Companies have several positions that an employee can be at. Employees at the same position get the same salary. Given a list of employees and their salaries, you have to determine how many positions are there at a given company. The input spec is as follows:
     1. The first line is a number (say N)
-    2. N lines follow. Each line contains the name of an employee, and his salary (space separated). The salary may range from 10^5 to 10^9.
+    2. N lines follow. Each line contains the name of an employee, and his salary (space separated). The salary may range from 10^5 to 10^9
     3. Display the number of positions at this company
 2. You have probably heard of the mobile application called TrueCaller. By looking at a phone number, it tells you who is calling. It works like a reverse look-up phone directory.
 You have been asked to implement this application.
@@ -239,7 +238,7 @@ You have been asked to implement this application.
     4. Store the names and numbers
     5. Now start a menu-driven flow to:
         1. Accept a number from the user
-            1. If the number has a name associated with it, display it
+            1. If the number has a name associated with it, display it.
             2. If it does not, inform the user that it does not exist, and give him the option to provide a name. Store the name and number.
         2. Display the entire reverse mapping, in the following format:
             1. Number1: Name
