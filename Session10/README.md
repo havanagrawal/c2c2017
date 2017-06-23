@@ -74,8 +74,6 @@ The `throws` keyword is used in a method declaration, to declare to the caller t
 public static void main(String[] args) throws IOException {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-    // Check the documentation for readLine method of BufferedReader
-    // You'll see that it declares
     String s = br.readLine();
 }
 ```
@@ -264,7 +262,7 @@ catch (IOException ioe) {
 
 #### <a name="propagation"></a>Call Stack propagation
 
-Q: What happens when an exception is thrown, and you don't catch it?
+Q: What happens when an exception is thrown, and you don't catch it?  
 A: The exception will propagate up through the call stack, till either someone catches it, or it gets thrown out of main, in which case the JVM stops the program and prints out the stack trace to the console.
 
 It is important to remember that for a checked exception to get propagated through the call stack, *every* method on the stack will have had to have declared throwing that exception.
