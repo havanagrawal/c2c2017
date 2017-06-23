@@ -171,26 +171,95 @@ There are several possible variations of try-catch-finally, not all of which are
 1. Simple try-catch
 ```java
 try {
-
+    // some code that throws IOException
 }
 catch (IOException e) {
-
+    // some code
 }
 ```
 
 2. Simple try-catch-finally
 ```java
 try {
-
+    // some code that throws IOException
 }
 catch (IOException e) {
+    // some code
+}
+finally {
+    // some code
+}
+```
 
+3. Nested try inside a catch (or finally) block
+```java
+try {
+    // some code that throws IOException
+}
+catch (IOException e) {
+    try {
+        // some code    
+    }
+    catch (DataFormatException) {
+        // some code
+    }
+}
+```
+
+4. Cascading catches
+```java
+try {
+    // some code that throws IOException
+}
+catch (IOException ioe) {
+    // some code
+}
+catch (ArithmeticException ae) {
+    // some code
+}
+```
+
+5. Try-finally with no catches
+```java
+try {
+    // some code
 }
 finally {
 
 }
 ```
 
+##### Invalid
+
+1. Just try
+```java
+try {
+    // some code
+}
+```
+
+2. Catching *checked* exceptions that cannot be thrown by the code in the try block
+```java
+try {
+    // some code that never throws an IOException
+}
+catch (IOException ioe) {
+
+}
+```
+
+3. Catching exceptions higher in the hierarchy before sub-class exceptions in a cascading catch
+```java
+try {
+    // some code
+}
+catch (Exception ioe) {
+
+}
+catch (IOException ioe) {
+    // This is unreachable code!
+}
+```
 
 #### <a name="tcf-cases"></a>Some "Exceptional" Cases
 
