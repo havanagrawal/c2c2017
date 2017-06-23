@@ -7,7 +7,8 @@
     3. [`throw` and `throws`](#throw-throws)
     4. [try-catch-finally](#tcf)
     5. [Variants of try-catch-finally](#tcf-variants)
-    6. [Some "Exceptional" Cases](#tcf-cases)
+    6. [Call Stack propagation](#propagation)
+    7. [Some "Exceptional" Cases](#tcf-cases)
 2. [Garbage Collection](#gc)
     1. [The Garbage Collector](#gc-core)
     2. [The `finalize` method](#finalize)
@@ -260,6 +261,13 @@ catch (IOException ioe) {
     // This is unreachable code!
 }
 ```
+
+#### <a name="propagation"></a>Call Stack propagation
+
+Q: What happens when an exception is thrown, and you don't catch it?
+A: The exception will propagate up through the call stack, till either someone catches it, or it gets thrown out of main, in which case the JVM stops the program and prints out the stack trace to the console.
+
+It is important to remember that for a checked exception to get propagated through the call stack, *every* method on the stack will have had to have declared throwing that exception.
 
 #### <a name="tcf-cases"></a>Some "Exceptional" Cases
 
