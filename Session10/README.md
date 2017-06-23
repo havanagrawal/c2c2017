@@ -263,13 +263,44 @@ catch (IOException ioe) {
 
 #### <a name="tcf-cases"></a>Some "Exceptional" Cases
 
+1. What do you think is returned from this function? Try to execute it and find out!
+
+```java
+public static int whatThe() {
+    try {
+        return 10;
+    }
+    finally {
+        return 20;
+    }
+}
+```
+
+2. The `finally` block **ALWAYS** executes, *unless* the JVM itself shuts down, one way of doing which is `System.exit()`. **DO NOT EVER CALL System.exit, it is a foul habit!**
+
 #### <a name="joke"></a>Bonus: A Lame Joke
 
 ### <a name="gc"></a>Garbage Collection
 
+When objects on the heap are no longer accessible by a reference on the stack, they are cleaned up by the garbage collector.
+
 #### <a name="gc-core"></a>The Garbage Collector
 
+The Garbage Collector is a vast topic in itself, with varying implementations, each with its own performance and efficiency characteristics.
+
+For now, it is sufficient to understand that the GC simply performs a DFS to look for live objects on the heap, starting from root references (on the stack), and then marks everything else as garbage collectible.
+
+Note that we will always say that an object is "eligible" for garbage collection, and never "is being garbage collected", *because you cannot guarantee when the garbage collector runs.*
+
 #### <a name="finalize"></a>The `finalize` method
+
+The `finalize` method is used to perform any clean up operations, when the instance is being garbage collected.
+
+A common misconception is that it is synonymous to a destructor in C++. **It is not.**
+
+As usual, one of the best places to understand such core functionalities is the [JavaDoc](https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html#finalize()). The `finalize` method resides in the Object class, and so every class inherits the `finalize` method.
+
+It is rare to see this method overridden by base classes.
 
 ### <a name="heaps"></a>Heaps
 
