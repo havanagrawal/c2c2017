@@ -36,7 +36,7 @@ Checked exceptions are checked by the *compiler*, in that if a method throws a c
 
 Unchecked exceptions are not checked by the compiler, and so the code that raises such an exception is not bound by any additional constraints.
 
-Everything under the `RuntimeException` and `Error` classes are unchecked. Everything other exception is checked.
+Everything under the `RuntimeException` and `Error` classes are unchecked. Every other exception is checked.
 
 [While the intent behind categorizing these two was good](https://docs.oracle.com/javase/tutorial/essential/exceptions/runtime.html), it is currently considered an overhead. There is a large set of programmers in the world, who believe that Java should have only unchecked exceptions.
 
