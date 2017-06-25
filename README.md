@@ -7,6 +7,7 @@ Course material and references for Campus To Corporate course, 2017.
 2. [Interactive Data Structure and Algorithm Visualizations](https://visualgo.net/en)
 3. [A Comparative Visualization of Sorting Algorithms](https://www.toptal.com/developers/sorting-algorithms/)
 4. [Another Visualization of Various Algorithms](http://algo-visualizer.jasonpark.me)
+5. [CS50 - The Quintessential Harvard Course](https://www.youtube.com/user/cs50tv)
 
 ## Other Interesting GitHub Repos
 
@@ -25,7 +26,9 @@ Course material and references for Campus To Corporate course, 2017.
 7. [Don't Use Gotos](https://xkcd.com/292/)
 8. [Real Life Applications of Subset Sum](https://xkcd.com/287/)
 9. [Peer Reviews](https://xkcd.com/1513/)
+10. [Parent-Child Bonding](https://xkcd.com/1188/)
 
 ## Motivation
 
 1. [What Most Schools Don't Teach](https://www.youtube.com/watch?v=nKIu9yen5nc)
+2. [Code - The New Literacy](https://www.youtube.com/watch?v=MwLXrN0Yguk)
