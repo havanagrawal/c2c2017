@@ -12,8 +12,7 @@
 2. [Garbage Collection](#gc)
     1. [The Garbage Collector](#gc-core)
     2. [The `finalize` method](#finalize)
-3. [Heaps](#heaps)
-4. [Assignments](#assignments)
+3. [Assignments](#assignments)
     1. [HackerRank](#hackerrank)
     2. [Miscellaneous](#miscellaneous)
 
@@ -307,8 +306,6 @@ A common misconception is that it is synonymous to a destructor in C++. **It is 
 As usual, one of the best places to understand such core functionalities is the [JavaDoc](https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html#finalize()). The `finalize` method resides in the Object class, and so every class inherits the `finalize` method.
 
 It is rare to see this method overridden by base classes.
-
-### <a name="heaps"></a>Heaps
 
 ### <a name="assignments"></a>Assignments
 
