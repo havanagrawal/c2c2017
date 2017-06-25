@@ -2,6 +2,8 @@
 
 This document lists down a comprehensive (but not exhaustive) list of topics under Operating Systems, Databases and Networking that you need to be fairly well versed with before you attempt the aptitude test / go for an interview.
 
+Use the below lists as a mental checklist, after having prepared these core topics. These are extremely broad topics, and so it is your responsibility to ensure you go deep enough to understand the bigger picture well enough.
+
 Remember that this is not just for campus placement. These topics can and will be tested over and over for any interview you go for, in the next few years.
 
 ## Table of Contents
@@ -9,6 +11,7 @@ Remember that this is not just for campus placement. These topics can and will b
 1. [Databases](#databases)
 2. [Operating Systems](#os)
 3. [Networking](#networking)
+4. [Other Resources](#others)
 
 ### <a name="databases"></a>Databases
 
@@ -35,7 +38,7 @@ Remember that this is not just for campus placement. These topics can and will b
 
 #### Resources
 
-1. [GeeksForGeeks](http://www.geeksforgeeks.org/dbms/)
+1. [GeeksForGeeks - Databases](http://www.geeksforgeeks.org/dbms/)
 
 ### <a name="os"></a>Operating Systems
 
@@ -71,7 +74,7 @@ Remember that this is not just for campus placement. These topics can and will b
 
 #### Resources
 
-1. [GeeksForGeeks](http://www.geeksforgeeks.org/operating-systems/)
+1. [GeeksForGeeks - Operating Systems](http://www.geeksforgeeks.org/operating-systems/)
 
 ### <a name="networking"></a>Networking
 
@@ -95,4 +98,12 @@ Remember that this is not just for campus placement. These topics can and will b
 
 #### Resources
 
-1. [GeeksForGeeks](http://www.geeksforgeeks.org/computer-network-tutorials/)
+1. [GeeksForGeeks - Networking](http://www.geeksforgeeks.org/computer-network-tutorials/)
+
+### <a name="others"></a>Other Resources
+
+1. https://www.indiabix.com/
+2. http://www.geeksforgeeks.org/
+3. https://www.interviewbit.com/
+4. https://leetcode.com/
+5. https://www.careercup.com/
