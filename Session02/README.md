@@ -60,7 +60,7 @@ Arrays give you instant random access to any element, by means of index.
 
 ```java
 // Note that arrays are 0-indexed
-// Indices				 0   1   2   3   4   5   6   7   8   9   10  11
+// Indices		 0   1   2   3   4   5   6   7   8   9   10  11
 int[] noOfDaysInMonth = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
 // Prints 28
@@ -87,7 +87,7 @@ for (int i = 0; i < a.length; i++) {
 
 2. for-each style
 ```java
-// k here is NOT the index, but the element itself
+// 'days' here is NOT the index, but the element itself
 for (int days : noOfDaysInMonth) {
 	System.out.println(days);
 }
@@ -121,7 +121,7 @@ class FunctionExample {
 	}
 	
 	public static boolean isOdd(long n) {
-		return n % 2 == 0;
+		return n % 2 != 0;
 	}
 }
 ```
@@ -204,7 +204,7 @@ What actually happens is that the varargs gets converted into an array. You can 
 
 2-D arrays can be visualized as matrices.
 ```java
-// Code snippet for populating a 2-D array with the mutiplication table
+// Code snippet for populating a 2-D array with the multiplication table
 
 n = sc.nextInt();
 long[][] mat = new long[n][n];
