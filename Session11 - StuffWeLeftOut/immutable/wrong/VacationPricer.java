@@ -7,14 +7,17 @@
 // Note:  The price variable is extraneous in the example,
 // it is only to drive home the impact a fault immutable class can have.
 
+// This class violates point 4 from
+// https://docs.oracle.com/javase/tutorial/essential/concurrency/imstrat.html
+
 import java.util.*;
 import java.util.concurrent.*;
 
 final class Vacation {
 
-	Date from;
-	Date to;
-	double priceInDollars;
+	private Date from;
+	private Date to;
+	private double priceInDollars;
 
 	public Vacation(Date from, Date to) {
 		this.from = from;

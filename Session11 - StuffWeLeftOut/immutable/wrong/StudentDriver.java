@@ -3,11 +3,14 @@
  * by means of a getter.
  */
 
+// This class violates point 4 from
+// https://docs.oracle.com/javase/tutorial/essential/concurrency/imstrat.html
+
 import java.util.*;
 
 final class Student {
 
-	List<Integer> marks;
+	private List<Integer> marks;
 
 	public Student(int... marks) {
 
