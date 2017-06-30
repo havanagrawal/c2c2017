@@ -12,6 +12,7 @@ Given the strong foundation in Java, Data Structures and Algorithms that you now
 2. [Java](#java)
     1. [Enums](#enums)
     1. [Packages](#packages)
+    1. [Immutable Classes](#immutable)
     1. [Multi-Threading](#threading)
     1. [Nested Classes](#nested-class)
 
@@ -46,7 +47,15 @@ Given the strong foundation in Java, Data Structures and Algorithms that you now
 
 > A package is a grouping of related types providing access protection and name space management. Note that types refers to classes, interfaces, enumerations, and annotation types.
 
-[Packages - Oracle Tutorial ](https://docs.oracle.com/javase/tutorial/java/package/packages.html)
+[Packages - Oracle Tutorial](https://docs.oracle.com/javase/tutorial/java/package/packages.html)
+
+#### <a name="immutable"></a>Immutable Classes
+
+An immutable class is one where an instance of that class cannot be modified in any way after construction. Immutable objects simplify multi-threaded code, since it eliminates the problem of shared read-write access.
+
+Making an immutable class can be trickier than at first sight. The following resource lists down a few guidelines for writing an immutable class.
+
+[Immutable Classes - Oracle Tutorial](https://docs.oracle.com/javase/tutorial/essential/concurrency/imstrat.html)
 
 #### <a name="threading"></a>Multi Threading
 
