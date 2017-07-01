@@ -55,6 +55,8 @@ An immutable class is one where an instance of that class cannot be modified in 
 
 Making an immutable class can be trickier than at first sight. The following resource lists down a few guidelines for writing an immutable class.
 
+Look at the wrong and right examples in the [immutable](immutable) directory. One of the examples has been corrected. As an exercise, fix the other two faulty immutable classes as well.
+
 [Immutable Classes - Oracle Tutorial](https://docs.oracle.com/javase/tutorial/essential/concurrency/imstrat.html)
 
 #### <a name="threading"></a>Multi Threading
