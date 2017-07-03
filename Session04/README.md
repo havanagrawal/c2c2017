@@ -113,7 +113,11 @@ Some important points:
 
 ### <a name="object-heap"></a>Object Heap
 
-TODO
+The Object Heap is a memory structure maintained by the JVM to store objects, i.e. instances of classes. Everything other than the 8 primitive data types are objects, including Strings and arrays.
+
+It is important to understand the difference between objects and object references:
+1. _Objects_ are what are created by the `new` keyword, and are stored on the heap **always**.  
+2. _Object references_ are "pointers" to the objects on the heap. They may be on the call stack (if created inside a function), or on the heap (if they are a instance variable of another class.)
 
 ### <a name="traps"></a>Some Traps and Pitfalls
 
