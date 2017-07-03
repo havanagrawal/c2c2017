@@ -121,7 +121,22 @@ It is important to understand the difference between objects and object referenc
 
 ### <a name="traps"></a>Some Traps and Pitfalls
 
-TODO
+1. String
+
+   The String class is treated slightly specially in the Java language. In particular, Strings are cached (or "memoized") by the compiler. These cached values are stored in a location on the heap called the _string pool_. For example, in the following snippet:
+
+   ```java
+String s1 = "hello";
+String s2 = "hello";
+```
+
+   you'd expect two different string objects to be created on the heap. However, only one is created, i.e. s1 and s2 point to the same object on the heap.
+
+2. Wrapper classes
+
+   A small cache is maintained for small valued integers as well, similar to the String pool. So if you make 2 `Integer` objects with the value 5, it is highly likely that i1 == i2 will be true, i.e. they will end up pointing to the same object in memory.
+
+   You need not know too much about this concept, given that it is slightly advanced, and typically does not play an important role in day to day development. 
 
 ### <a name="recursion"></a>Recursion And Memoization Practice
 
