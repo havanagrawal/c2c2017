@@ -101,7 +101,15 @@ Initializer blocks are a _slightly_ advanced concept, and so it is sufficient fo
 
 ### <a name="call-stack"></a>Call Stack
 
-TODO
+The call stack is a memory structure maintained by the JVM in order to keep track of function calls. Almost EVERY language has the concept of a call stack, since almost every language has the concept of functions.
+
+Whenever a function is called, a stack "frame" is created, and pushed on the stack. This is simply a fancy term for a structure that can hold all the local variables and arguments passed to the function. When the function returns, the frame is popped off.
+
+Some important points:
+
+1. The call stack is used for ALL function calls, not just recursive calls.
+2. If you call too many functions (typically happens in infinite/deep recursion), the stack memory fills up, and you get a [StackOverflowError](https://docs.oracle.com/javase/7/docs/api/java/lang/StackOverflowError.html)
+3. **Each thread has its own call stack.** Whenever you start a new thread, a new call stack is created from that point on.
 
 ### <a name="object-heap"></a>Object Heap
 
