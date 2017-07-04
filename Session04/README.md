@@ -121,12 +121,11 @@ It is important to understand the difference between objects and object referenc
 
 1. String
 
-   The String class is treated slightly specially in the Java language. In particular, Strings are cached (or "memoized") by the compiler. These cached values are stored in a location on the heap called the _string pool_. For example, in the following snippet:
-
+   The String class is treated slightly specially in the Java language. In particular, Strings are cached (or "memoized") by the compiler. These cached values are stored in a location on the heap called the _string pool_. For example, in the following snippet:  
    ```java
-String s1 = "hello";
-String s2 = "hello";
-```
+   String s1 = "hello";
+   String s2 = "hello";
+   ```
 
    you'd expect two different string objects to be created on the heap. However, only one is created, i.e. s1 and s2 point to the same object on the heap.
 
