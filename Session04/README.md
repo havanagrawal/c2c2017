@@ -8,8 +8,6 @@
 3. [Call Stack](#call-stack)
 4. [Object Heap](#object-heap)
 5. [Some Traps and Pitfalls](#traps)
-	1. [Compiler Evaluations](#compiler)
-	2. [String Interning](#string-intern)
 6. [Recursion And Memoization Practice](#recursion)
 7. [BufferedReader - The Faster Way Of Accepting Input](#buffered-reader)
 8. [Sorting - A High Level Perspective](#sorting)
@@ -35,9 +33,9 @@ class Person {
 	String name;
 	int age;
 	double height;
-	
+
 	final int yearOfBirth;	// Because obviously your birth year cannot change
-	
+
 	// Parameterized constructor
 	Person(String n, int a, double h, int y) {
 		name = n;
@@ -45,7 +43,7 @@ class Person {
 		height = h;
 		yearOfBirth = y;
 	}
-	
+
 	// Instance method
 	void drinkComplan() {
 		height += 0.1;
@@ -54,7 +52,7 @@ class Person {
 
 class ComplanAdvertisement {
 	public static void main(String[] args) {
-	
+
 		Person p = new Person("Peter", 18, 5.1, 1999);
 		System.out.println(p.getHeight());			//	Prints out 5.1
 
@@ -74,14 +72,14 @@ Example:
 ```java
 class Person {
 	int age;
-	
+
 	{
 		age = 18;
 	}
 }
 ```
 
-The initializer block's content is copied into **every** constructor by the compiler. This means that you can initialize final variables in the instance initializer block as well. 
+The initializer block's content is copied into **every** constructor by the compiler. This means that you can initialize final variables in the instance initializer block as well.
 
 2. <a name="static-initializer"></a>Static Initializer Block  
 This is executed once for each class.
@@ -89,7 +87,7 @@ This is executed once for each class.
 ```java
 class MathExample {
 	static double pi;
-	
+
 	static {
 		pi = 3.14;
 	}
@@ -187,30 +185,30 @@ class BufferedReaderExample {
 	// We will see Exceptions in detail in a future session
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		
+
 		// br.readLine() returns a single String, which is the current line of input
 		String s = br.readLine();
-		int T = Integer.parseInt(s);	
-		
+		int T = Integer.parseInt(s);
+
 		// Similar methods are Long.parseLong(), Double.parseDouble(), etc
-		
+
 		while (T != 0) {
 			// You can do it in a single line as well
 			int n = Integer.parseInt(br.readLine());
-			
+
 			int[] arr = new int[n];
-			
+
 			// br.readLine() would result in a String which looks something like "1 2 3 10 5 4"
 			// Split returns an array of strings, depending on the delimiter, which is mostly a space
 			// sa now has {"1", "2", "3", "10", "5", "4"}
 			String[] sa = br.readLine().split(" ");
-			
+
 			for (int i = 0; i < n; i++) {
 				arr[i] = Integer.parseInt(sa[i]);
 			}
-			
+
 			// Do usual stuff with arr
-			
+
 			T--;
 		}
 	}
@@ -225,7 +223,7 @@ There are dozens of sorting algorithms, which we will see in a later session. Fo
 
 In Java, you can use `Arrays.sort` static (overloaded) method from the [Arrays](https://docs.oracle.com/javase/7/docs/api/java/util/Arrays.html) utility class from the `java.util` package.
 
-### <a name="assignments"></a>Assignments 
+### <a name="assignments"></a>Assignments
 
 #### <a name="hackerrank"></a>HackerRank
 1.	https://www.hackerrank.com/challenges/hackerrank-in-a-string  
