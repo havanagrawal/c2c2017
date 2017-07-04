@@ -14,16 +14,18 @@
     3. [Loops](#loops)
     4. [Loop practice](#loop-practice)
 3. [Assignments](#assignments)
+    1. [HackerRank](#hackerrank)
+    2. [Miscellaneous](#miscellaneous)
 
-### <a name="intro"></a>Intro to Java 
+### <a name="intro"></a>Intro to Java
 #### <a name="what-is-java"></a> What is Java?
 1. A programming language
 2. Object oriented
 3. WORA (Write-Once-Read-Anywhere)
 4. Platform Independent
- 
+
 #### <a name="flavors"></a>Flavors of Java
-1. ME - Mobile Edition, 
+1. ME - Mobile Edition,
 2. SE - Standard Edition
 3. EE - Enterprise Edition
 
@@ -35,14 +37,14 @@ JRE = Java Runtime Environment, provides you with libraries to run Java programs
 JVM = Java Virtual Machine, responsible for actually running compiled Java code (bytecode).  
 The JVM is what makes Java platform independent.  
 The JVM itself is not platform independent.  
-  
+
 When compiling, remember that `javac` requires the **filename** as a parameter.  
 When running, remember that `java` requires the **name of the main class** as a parameter
 
 To avoid confusion, (and by convention), you should name both the file and the class it contains with the same name, **but this is not strictly compulsory, unless your class is public**. So `HelloWorld.java` would have a class called `HelloWorld`, which would have to have a method called `main` with the correct signature (See [Hello World](#hello) example below.)
-	
-	
-	
+
+
+
 ```
 javac HelloWorld.java
 java Hello
@@ -71,18 +73,18 @@ class Hello {
 `System`, `out`, and `println`  
 Signature of a function = name of the method + number and type of arguments (return type is not part of the signature in Java)  
 signature of `main` = `main` + a single argument which is an array of Strings.  
-  
+
 If you do not define main correctly, but are close enough, these are the messages you would see **on runtime**:   
 ```
 # Changed the return type
 Error: Main method must return a value of type void in class HelloWorld, please
 define the main method as:
    public static void main(String[] args)
-	 
+
 # Removed the static identifier
 Error: Main method is not static in class HelloWorld, please define the main method as:
    public static void main(String[] args)
-	 
+
 # Removed the public identifier
 # Note how it says it couldn't "find" the method at all.
 Error: Main method not found in class HelloWorld, please define the main method as:
@@ -126,7 +128,7 @@ Casting from and to different data types
 Be careful with shorthand notation (`+=`, `-=`) because of implicit casting  
 Be careful with floating point precision  
 
-### <a name="some-real-coding"></a>Some real coding 
+### <a name="some-real-coding"></a>Some real coding
 Input using `Scanner` class
 
 ```java
@@ -164,7 +166,7 @@ if (<boolean-expression>) {
 }
 else {
     if (<some-other-condition>) {
-        // do something 
+        // do something
     }
     else {
         // do something else
@@ -176,7 +178,7 @@ if (<boolean-expression>) {
     // do stuff
 }
 else if (<some-other-condition>) {
-    // do something 
+    // do something
 }
 else {
     // do something else
@@ -232,14 +234,14 @@ You can skip the default case, but it is better to include it.
 
 ##### <a name="conditionals-practice"></a>Practice:  
 1.	https://www.hackerrank.com/challenges/compare-the-triplets  
-	
+
 #### <a name="loops"></a>Loops
 
 There are three styles of looping  
 1. for  
 2. while  
 3. do-while  
- 
+
 
 ##### for
 
@@ -310,7 +312,7 @@ while (<condition>);    // <- note the semicolon after the end
 
 ### <a name="assignments"></a>Home Assignments
 
-#### HackerRank
+#### <a name="hackerrank"></a>HackerRank
 1.	https://www.hackerrank.com/challenges/handshake  
 2.	https://www.hackerrank.com/challenges/summing-the-n-series  
 3.	https://www.hackerrank.com/challenges/staircase  
@@ -320,18 +322,17 @@ while (<condition>);    // <- note the semicolon after the end
 7.	https://www.hackerrank.com/challenges/angry-professor  
 8.	https://www.hackerrank.com/challenges/rectangular-game  
 
-#### Miscellaneous
+#### <a name="miscellaneous"></a>Miscellaneous
 1. Write a calculator program. Specifications:
     1. Display a menu to the user. Menu should have the following options:
         1. 1 = Addition, 2. Subtraction, 3 = Multiplication, 4 = Division, 5 = Exit
 	2. Accept an integer choice. If the choice is either 1, 2, 3 or 4, accept two **real numbers** from the user. (Hint: Search what real numbers are on Google, and decide on an appropriate data type for them.)
-	3. Perform the appropriate action on the two numbers. 
+	3. Perform the appropriate action on the two numbers.
 	4. Display the output.
 	5. If the user input an incorrect choice, inform him/her. Do **not** exit.
 	6. Continue steps 1 to 5, till the user chooses to exit.  
-  
+
 	Some interesting cases:  
 	1. What do you expect will happen when you choose option 4, and the second operand is 0? What actually happens? What happens when you change the data type to plain integers?  
 	2. Does this help you answer an [earlier puzzle](#puzzles)?  
 	3. Pick option 2, enter the first operand as 2.1, and the second as 1.2. What output do you expect? What do you actually get? Why?   
-
