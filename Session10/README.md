@@ -283,8 +283,6 @@ public static int whatThe() {
 
 2. The `finally` block **ALWAYS** executes, *unless* the JVM itself shuts down, one way of doing which is `System.exit()`. **DO NOT EVER CALL System.exit, it is a foul habit!**
 
-#### <a name="joke"></a>Bonus: A Lame Joke
-
 ### <a name="gc"></a>Garbage Collection
 
 When objects on the heap are no longer accessible by a reference on the stack, they are cleaned up by the garbage collector.
