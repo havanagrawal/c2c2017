@@ -72,6 +72,8 @@ In Java, it is sufficient to understand:
 4. The `volatile` keyword
 5. The `synchronized` keyword
 
+[Concurrency - Oracle Tutorial](https://docs.oracle.com/javase/tutorial/essential/concurrency/index.html)
+
 #### <a name="nested-class"></a>Nested Classes
 
 > Nested classes are divided into two categories: static and non-static. Nested classes that are declared static are called static nested classes. Non-static nested classes are called inner classes.
