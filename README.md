@@ -109,6 +109,7 @@ Course material and references for Campus To Corporate course, 2017.
     6. [Assignments](Session05#assignments)
         1. [HackerRank](Session05#hackerrank)
         2. [Miscellaneous](Session05#miscellaneous)
+    7. [Test](Session05#test)
 1. [Session 6](Session06)
     1. [RapidFire Revision](Session06#rapid-revision)
     2. [The `final` modifier (again)](Session06#final-modifier)
