@@ -13,6 +13,7 @@
 6. [Assignments](#assignments)
     1. [HackerRank](#hackerrank)
     2. [Miscellaneous](#miscellaneous)
+7. [Test](#test)
 
 ### <a name="parameter-passing"></a>Call By Value / Call By Copy Of Reference
 
@@ -278,3 +279,6 @@ Solve these AFTER you have solved the miscellaneous section, since the classes y
 
 When solving these problems, think about each variable and method with `private`, `protected`, `public`, `static` and `final` in mind.
 	
+### <a name="test"></a>Test
+
+http://www.hackerrank.com/c2c2017-4
