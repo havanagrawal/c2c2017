@@ -1,6 +1,8 @@
 # c2c2017
 Course material and references for Campus To Corporate course, 2017.
 
+<img src="https://github.com/havanagrawal/c2c2017/blob/master/RubberDucks.jpg" width="500" height="500"></a>
+
 ## Resources
 
 1. [Space-Time Complexity Cheatsheet](http://bigocheatsheet.com/)
