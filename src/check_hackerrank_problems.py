@@ -1,3 +1,9 @@
+"""A short script to retrieve HackerRank details for a set of users
+
+This uses an unofficial, non-public URL to retrieve details.
+I have added a deliberate delay so as to not over-burden the HackerRank servers
+"""
+
 import urllib, json
 import os
 from datetime import datetime
