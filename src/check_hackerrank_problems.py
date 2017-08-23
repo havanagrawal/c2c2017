@@ -84,25 +84,7 @@ def get_problems_from_hackerrank(username):
     cursor = "null"
 
     while True:
-        url = HR_URL.format(user=username, cursor=cursor)
-
-        start_time = datetime.now()
-        response = urllib.urlopen(url)
-        end_time = datetime.now()
-
-        total_seconds = (end_time - start_time).total_seconds()
-
-        print("URL call took {} seconds".format(total_seconds))
-
-        try:
-            data = json.load(response)
-        except ValueError as ve:
-            print("ERROR: " + str(ve))
-            print("We will try again later for this user")
-            return
-
-        problems = data['models']
-        cursor = data['cursor']
+        problems, cursor = _get_next_set_of_problems(username, cursor)
 
         for p in problems:
             hr_prob = HackerRankProblem(p['url'], p['created_at'], p['ch_slug'], p['name'], p['con_slug'])
@@ -110,6 +92,29 @@ def get_problems_from_hackerrank(username):
 
         if not cursor:
             return
+
+def _get_next_set_of_problems(username, cursor):
+    url = HR_URL.format(user=username, cursor=cursor)
+
+    start_time = datetime.now()
+    response = urllib.urlopen(url)
+    end_time = datetime.now()
+
+    total_seconds = (end_time - start_time).total_seconds()
+
+    print("URL call took {} seconds".format(total_seconds))
+
+    try:
+        data = json.load(response)
+    except ValueError as ve:
+        print("ERROR: " + str(ve))
+        print("We will try again later for {user}".format(user=username))
+        return [], None
+
+    problems = data['models']
+    cursor = data['cursor']
+
+    return problems, cursor
 
 
 def read_json_file():
