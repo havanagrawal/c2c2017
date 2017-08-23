@@ -1,6 +1,8 @@
 # c2c2017
 Course material and references for Campus To Corporate course, 2017.
 
+<img src="https://github.com/havanagrawal/c2c2017/blob/master/RubberDucks.jpg" width="500" height="500"></a>
+
 ## Resources
 
 1. [Space-Time Complexity Cheatsheet](http://bigocheatsheet.com/)
@@ -109,6 +111,7 @@ Course material and references for Campus To Corporate course, 2017.
     6. [Assignments](Session05#assignments)
         1. [HackerRank](Session05#hackerrank)
         2. [Miscellaneous](Session05#miscellaneous)
+    7. [Test](Session05#test)
 1. [Session 6](Session06)
     1. [RapidFire Revision](Session06#rapid-revision)
     2. [The `final` modifier (again)](Session06#final-modifier)
@@ -169,13 +172,13 @@ Course material and references for Campus To Corporate course, 2017.
     3. [Assignments](Session10#assignments)
         1. [HackerRank](Session10#hackerrank)
         2. [Miscellaneous](Session10#miscellaneous)
-1. [Session 11](Session11)
-    1. [Data Structures and Algorithms](Session11#dsa)
-        1. [Heaps](Session11#heaps)
-        2. [Self Balancing Trees](Session11#sbt)
-    2. [Java](Session11#java)
-        1. [Enums](Session11#enums)
-        1. [Packages](Session11#packages)
-        1. [Immutable Classes](Session11#immutable)
-        1. [Multi-Threading](Session11#threading)
-        1. [Nested Classes](Session11#nested-class)
+1. [Session 11](Session11%20-%20StuffWeLeftOut)
+    1. [Data Structures and Algorithms](Session11%20-%20StuffWeLeftOut#dsa)
+        1. [Heaps](Session11%20-%20StuffWeLeftOut#heaps)
+        2. [Self Balancing Trees](Session11%20-%20StuffWeLeftOut#sbt)
+    2. [Java](Session11%20-%20StuffWeLeftOut#java)
+        1. [Enums](Session11%20-%20StuffWeLeftOut#enums)
+        1. [Packages](Session11%20-%20StuffWeLeftOut#packages)
+        1. [Immutable Classes](Session11%20-%20StuffWeLeftOut#immutable)
+        1. [Multi-Threading](Session11%20-%20StuffWeLeftOut#threading)
+        1. [Nested Classes](Session11%20-%20StuffWeLeftOut#nested-class)
