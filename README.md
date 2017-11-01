@@ -10,6 +10,8 @@ Course material and references for Campus To Corporate course, 2017.
 3. [A Comparative Visualization of Sorting Algorithms](https://www.toptal.com/developers/sorting-algorithms/)
 4. [Another Visualization of Various Algorithms](http://algo-visualizer.jasonpark.me)
 5. [CS50 - The Quintessential Harvard Course](https://www.youtube.com/user/cs50tv)
+6. [Google - Coding Interview Example](https://www.youtube.com/watch?v=XKu_SEDAykw)
+7. [Google - Preparing for a Technical Interview](https://www.youtube.com/watch?v=ko-KkSmp-Lk)
 
 ## Other Interesting GitHub Repos
 
