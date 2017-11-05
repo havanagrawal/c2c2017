@@ -57,7 +57,7 @@ Remember that this is not just for campus placement. These topics can and will b
    1. Avoidance
    1. Recovery
 1. Semaphore
-1. Virtual Memory
+1. [Virtual Memory](https://www.youtube.com/watch?v=qcBIvnQt0Bw&list=PLiwt1iVUib9s2Uo5BeYmwkDFUh70fJPxX)
 1. Paging and Thrashing
 1. Paging Strategies
 1. Cache Memory
