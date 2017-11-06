@@ -81,14 +81,14 @@ Remember that this is not just for campus placement. These topics can and will b
 #### Topics
 
 1. LAN, WAN, MAN
-1. Hubs, Switches and Routers
+1. [Hubs, Switches and Routers](https://www.youtube.com/watch?v=Ofjsh_E4HFY)
 1. P2P and Client-Server Networks
 1. OSI model
 1. TCP/IP stack
-1. TCP vs UDP
+1. [TCP vs UDP](https://www.youtube.com/watch?v=Vdc8TCESIg8)
 1. IP addresses and MAC addresses
 1. Ports and Sockets
-1. DNS
+1. [DNS](https://www.youtube.com/watch?v=GlZC4Jwf3xQ)
 1. URL and URI
 1. DHCP
 1. ARP and RARP
