@@ -90,7 +90,7 @@ Remember that this is not just for campus placement. These topics can and will b
 1. Ports and Sockets
 1. [DNS](https://www.youtube.com/watch?v=GlZC4Jwf3xQ)
 1. URL and URI
-1. DHCP
+1. [DHCP](https://www.youtube.com/watch?v=RUZohsAxPxQ)
 1. ARP and RARP
 1. Subnetting
 1. Unicast, Broadcast and Multicast
