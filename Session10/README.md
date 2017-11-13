@@ -79,7 +79,7 @@ public static void main(String[] args) throws IOException {
 
 Since [`IOException`](https://docs.oracle.com/javase/7/docs/api/java/io/IOException.html) is a checked exception, it must be declared to be thrown by the method.
 
-If you check the documentation for [readLine](https://docs.oracle.com/javase/7/docs/api/java/io/BufferedReader.html#readLine() method of BufferedReader, you'll see that it declares that it throws IOException.
+If you check the documentation for the [readLine](https://docs.oracle.com/javase/7/docs/api/java/io/BufferedReader.html#readLine()) method of BufferedReader, you'll see that it declares that it throws IOException.
 
 #### <a name="tcf"></a>try-catch-finally
 
