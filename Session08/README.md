@@ -127,7 +127,7 @@ Set: http://docs.oracle.com/javase/7/docs/api/java/util/Set.html
 
 Binary Trees are a class of tree data structures, with the following property: *Each node may have a maximum of two children.*
 
-Binary Trees by themselves are typically not very useful. By applying additional constraints on top of them, the can be given useful properties. Some examples of binary trees are:
+Binary Trees by themselves are typically not very useful. By applying additional constraints on top of them, they can be given useful properties. Some examples of binary trees are:
 1. Binary Search Trees  
 2. Heaps
 3. Treaps
