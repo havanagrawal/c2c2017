@@ -40,6 +40,9 @@ Course material and references for Campus To Corporate course, 2017.
 
 ## Index
 
+<details>
+<summary>Session 1</summary>
+    
 1. [Session 1](Session01)
     1. [Intro to Java](Session01#intro)
         1. [What is Java](Session01#what-is-java)
@@ -56,6 +59,11 @@ Course material and references for Campus To Corporate course, 2017.
     3. [Assignments](Session01#assignments)
         1. [HackerRank](Session01#hackerrank)
         2. [Miscellaneous](Session01#miscellaneous)
+</details>
+
+<details>
+<summary>Session 2</summary>
+    
 1. [Session 2](Session02)
     1. [Revision](Session02#revision)
     2. [Arrays](Session02#arrays)
@@ -72,6 +80,12 @@ Course material and references for Campus To Corporate course, 2017.
     	1. [HackerRank](Session02#hackerrank)
     	2. [Miscellaneous](Session02#miscellaneous)
     7. [Test](Session02#test)
+    
+</details>
+
+<details>
+<summary>Session 3</summary>
+
 1. [Session 3](Session03)
     1. [Function Overloading](Session03#function-overload)
     2. [Classes](Session03#classes)
@@ -86,6 +100,12 @@ Course material and references for Campus To Corporate course, 2017.
         1. [HackerRank](Session03#hackerrank)
         2. [Miscellaneous](Session03#miscellaneous)
     4. [Test](Session03#test)
+    
+</details>
+
+<details>
+<summary>Session 4</summary>    
+    
 1. [Session 4](Session04)
     1. [Revision](Session04#session3-revise)
     2. [Initializer Blocks](Session04#initializer)
@@ -101,6 +121,12 @@ Course material and references for Campus To Corporate course, 2017.
         1. [HackerRank](Session04#hackerrank)
         2. [Miscellaneous](Session04#miscellaneous)
     10. [Test](Session04#test)
+    
+</details>
+
+<details>
+<summary>Session 5</summary>    
+    
 1. [Session 5](Session05)
     1. [Call By Value / Call By Copy Of Reference](Session05#parameter-passing)
     2. [The `this` keyword](Session05#this-keyword)
@@ -115,6 +141,12 @@ Course material and references for Campus To Corporate course, 2017.
         1. [HackerRank](Session05#hackerrank)
         2. [Miscellaneous](Session05#miscellaneous)
     7. [Test](Session05#test)
+    
+</details>
+
+<details>
+<summary>Session 6</summary>    
+    
 1. [Session 6](Session06)
     1. [RapidFire Revision](Session06#rapid-revision)
     2. [The `final` modifier (again)](Session06#final-modifier)
@@ -127,12 +159,24 @@ Course material and references for Campus To Corporate course, 2017.
     6. [Assignments](Session06#assignments)
         1. [HackerRank](Session06#hackerrank)
         2. [Miscellaneous](Session06#miscellaneous)
+        
+</details>
+
+<details>
+<summary>Session 7</summary>        
+        
 1. [Session 7](Session07)
     1. [Linked Lists](Session07#linked-list)
     2. [Sorting](Session07#sorting)
     3. [Assignments](Session07#assignments)
         1. [HackerRank](Session07#hackerrank)
         2. [Miscellaneous](Session07#miscellaneous)
+        
+</details>
+
+<details>
+<summary>Session 8</summary>        
+        
 1. [Session 8](Session08)
     1. [The Collections Framework - Part I](Session08#cfw)
         1. [The Collection Hierarchy](Session08#hierarchy)
@@ -144,6 +188,12 @@ Course material and references for Campus To Corporate course, 2017.
     3. [Assignments](Session08#assignments)
         1. [HackerRank](Session08#hackerrank)
         2. [Miscellaneous](Session08#miscellaneous)
+        
+</details>
+
+<details>
+<summary>Session 9</summary>        
+        
 1. [Session 9](Session09)
     1. [The Object Class, `equals` and `hashCode`](Session09#object)
     2. [The Collections Framework - Part II](Session09#cfw)
@@ -160,6 +210,12 @@ Course material and references for Campus To Corporate course, 2017.
     4. [Assignments](Session09#assignments)
         1. [HackerRank](Session09#hackerrank)
         2. [Miscellaneous](Session09#miscellaneous)
+        
+</details>
+
+<details>
+<summary>Session 10</summary>        
+        
 1. [Session 10](Session10)
     1. [Exception Handling](Session10#exceptions)
         1. [The Exception Hierarchy](Session10#hierarchy)
@@ -175,6 +231,12 @@ Course material and references for Campus To Corporate course, 2017.
     3. [Assignments](Session10#assignments)
         1. [HackerRank](Session10#hackerrank)
         2. [Miscellaneous](Session10#miscellaneous)
+        
+</details>
+
+<details>
+<summary>Session 11</summary>        
+        
 1. [Session 11](Session11%20-%20StuffWeLeftOut)
     1. [Data Structures and Algorithms](Session11%20-%20StuffWeLeftOut#dsa)
         1. [Heaps](Session11%20-%20StuffWeLeftOut#heaps)
@@ -185,3 +247,5 @@ Course material and references for Campus To Corporate course, 2017.
         1. [Immutable Classes](Session11%20-%20StuffWeLeftOut#immutable)
         1. [Multi-Threading](Session11%20-%20StuffWeLeftOut#threading)
         1. [Nested Classes](Session11%20-%20StuffWeLeftOut#nested-class)
+
+</details>
