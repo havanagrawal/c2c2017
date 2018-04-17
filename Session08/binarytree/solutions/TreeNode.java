@@ -11,8 +11,7 @@ class TreeNode {
 	}
 	
     // get data from node 
-    public int getData()
-    {
+    public int getData() {
         return data;
     }    
 }

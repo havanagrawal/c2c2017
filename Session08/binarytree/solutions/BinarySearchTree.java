@@ -46,7 +46,7 @@ class BinarySearchTree extends BinaryTree {
 		}
 	}
 	
-	public TreeNode deleteRecursive(TreeNode root, int key){
+	public TreeNode deleteRecursive(TreeNode root, int key) {
         // if tree is empty, return null
         if (root == null)  {
             return null;
@@ -97,8 +97,7 @@ class BinarySearchTree extends BinaryTree {
 		}
 	}
 	
-	public TreeNode search(TreeNode root, int key)
-    {
+	public TreeNode search(TreeNode root, int key) {
         // not found
         if(root==null) {
             return null;
@@ -124,9 +123,9 @@ class BinarySearchTree extends BinaryTree {
 		else return tn;
 	}
 	
-	// The node value present in between a and b is the lca. Assuming, a<b
-	public TreeNode lca(TreeNode root, int a, int b)
-	{
+	// The node value present in between a and b is the lca.
+	public TreeNode lca(TreeNode root, int a, int b) {
+	
 	    if(root == null) {
 	        return null;
 	    }
