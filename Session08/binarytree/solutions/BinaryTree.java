@@ -6,47 +6,47 @@ abstract class BinaryTree {
 	   by using super(), to instantiate the root node
 	 */
 	public BinaryTree(int rootValue) {
-		this.root = new TreeNode(rootValue);
+	    if(rootValue == -1) this.root = null;
 	}
 
 	public void inOrderTraversal() {
 		//TODO
-		inorderRec(root);
+		inorderRecursive(root);
 	}
 
 	public void preOrderTraversal() {
 		//TODO
-		preorderRec(root);
+		preorderRecursive(root);
 	}
 
 	public void postOrderTraversal() {
 		//TODO
-		postorderRec(root);
+		postorderRecursive(root);
 	}
 	
     // inorder traversal - left,visit,right
-    void inorderRec(TreeNode root) {
+    void inorderRecursive(TreeNode root) {
         if (root != null) {
-            inorderRec(root.left);
+            inorderRecursive(root.left);
             System.out.println(root.data);
-            inorderRec(root.right);
+            inorderRecursive(root.right);
         }
     }
     
     // preorder traversal - visit,left,right
-    void preorderRec(TreeNode root) {
+    void preorderRecursive(TreeNode root) {
         if (root != null) {
             System.out.println(root.data);
-            inorderRec(root.left);
-            inorderRec(root.right);
+            preorderRecursive(root.left);
+            preorderRecursive(root.right);
         }
     }
     
     // postorder traversal - left,right,visit
-    void postorderRec(TreeNode root) {
+    void postorderRecursive(TreeNode root) {
         if (root != null) {
-            inorderRec(root.left);
-            inorderRec(root.right);
+            postorderRecursive(root.left);
+            postorderRecursive(root.right);
             System.out.println(root.data);
         }
     }
