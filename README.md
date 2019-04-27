@@ -1,7 +1,14 @@
 # c2c2017
+
 Course material and references for Campus To Corporate course, 2017.
 
 <img src="https://github.com/havanagrawal/c2c2017/blob/master/RubberDucks.jpg" width="500" height="500"></a>
+
+## Introduction
+
+This repo contains notes, assignments, Java source code and other course material for a interview prep course held at K.J. Somaiya College of Engineering in 2017. It is made available under a permissive [MIT License](./LICENSE), so that it may benefit other students.
+
+If you like this repo or use it for your own interview prep, please leave it a :star: :)
 
 ## Resources
 
