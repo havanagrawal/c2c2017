@@ -225,13 +225,13 @@ As we have seen before, you can explicitly call the parent class constructor by 
 ```java
 class Point {
 	private int x;
-	
+
 	Point(int x) {
 		this.x = x;
 	}
 }
 
-class Point2D extends Point{
+class Point2D extends Point {
 	private int y;
 
 	Point2D(int x, int y) {
