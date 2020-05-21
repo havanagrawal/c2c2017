@@ -27,7 +27,7 @@
 10.	What does the final modifier do to variables? (makes them initializable only once)
 11.	Where can you assign to a final instance variable? (declaration, all constructors, instance initialization block)
 12.	Where can you assign to a final static variable? (declaration, static block)
-13.	When I say “new”, what happens? (object is created on the heap_
+13.	When I say “new”, what happens? (object is created on the heap)
 14.	What is the first method to be pushed onto the call stack? (main)
 15.	Where are primitives stored? (call stack)
 16.	Where are object references stored? (call stack)
@@ -72,25 +72,25 @@ class Point3D {
     private int x;
     private int y;
     private int z;
-    
+
     public Point3D() {
     	this.x = 0;
         this.y = 0;
         this.z = 0;
     }
-    
+
     public Point3D(int x) {
     	this.x = x; // "this" is necessary here to distinguish from the local variable x
         this.y = 0;
         this.z = 0;
     }
-    
+
     public Point3D(int x, int y) {
     	this.x = x; // "this" is necessary here to distinguish from the local variable x
         this.y = y; // "this" is necessary here to distinguish from the local variable y
         this.z = 0;
     }
-    
+
     public Point3D(int x, int y, int z) {
     	this.x = x; // "this" is necessary here to distinguish from the local variable x
         this.y = y; // "this" is necessary here to distinguish from the local variable y
@@ -106,19 +106,19 @@ class Point3D {
     private int x;
     private int y;
     private int z;
-    
+
     public Point3D() {
     	this(0, 0, 0);
     }
-    
+
     public Point3D(int x) {
     	this(x, 0, 0);
     }
-    
+
     public Point3D(int x, int y) {
     	this(x, y, 0);
     }
-    
+
     public Point3D(int x, int y, int z) {
     	this.x = x;
         this.y = y;
@@ -225,15 +225,15 @@ As we have seen before, you can explicitly call the parent class constructor by 
 ```java
 class Point {
 	private int x;
-	
+
 	Point(int x) {
 		this.x = x;
 	}
 }
 
-class Point2D {
+class Point2D extends Point {
 	private int y;
-	
+
 	Point2D(int x, int y) {
 		super(x);
 		this.y = y;
@@ -243,7 +243,7 @@ class Point2D {
 
 ### <a name="#abstract-classes"></a>Abstract Classes
 
-Abstract classes are classes that are declared abstract, and may or may not have abstract methods. 
+Abstract classes are classes that are declared abstract, and may or may not have abstract methods.
 
 Important points:   
 1. Abstract classes cannot be instantiated, only subclassed.  
@@ -255,7 +255,7 @@ abstract class BankAccount {
 	abstract void deposit(double amount);
 	abstract void withdraw(double amount);
 	abstract void getBalance();
-	
+
 	// A default implementation since 4% is a standard interest rate
 	double getInterestRate() {
 		return 4.0;
@@ -264,7 +264,7 @@ abstract class BankAccount {
 
 class UCUCUBankAccount extends BankAccount {
 	private double balance;
-	
+
 	void deposit(double amount) {
 		if (amount < 1000) {
 			System.out.println("Cannot deposit less than 1000");
@@ -273,22 +273,22 @@ class UCUCUBankAccount extends BankAccount {
 			balance += amount;
 		}
 	}
-	
+
 	void withdraw(double amount) {
 		// Ugh, 1% transaction charge
 		balance = balance - amount - 0.01 * amount;
 	}
-	
+
 	void getBalance() {
 		return balance;
 	}
-	
+
 	// Does not override getInterestRate, gives the usual interest rate of 4%
 }
 
 class LenaBankAccount extends BankAccount {
 	private double balance;
-	
+
 	void deposit(double amount) {
 		// More lenient :)
 		if (amount < 200) {
@@ -298,16 +298,16 @@ class LenaBankAccount extends BankAccount {
 			balance += amount;
 		}
 	}
-	
+
 	void withdraw(double amount) {
 		// No transaction charge :)
 		balance = balance - amount;
 	}
-	
+
 	void getBalance() {
 		return balance;
 	}
-	
+
 	// Override getInterestRate to get a better interest rate
 	double getInterestRate() {
 		return 6.0;
@@ -315,7 +315,7 @@ class LenaBankAccount extends BankAccount {
 }
 ```
 
-An excellent resource is the [Oracle Javadoc for abstract classes](https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html) 
+An excellent resource is the [Oracle Javadoc for abstract classes](https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html)
 
 ### <a name="#interfaces"></a>Interfaces
 
@@ -338,15 +338,15 @@ interface Shape {
 
 class Circle implements Shape {
 	private int radius;
-	
+
 	public Circle(int radius) {
 		this.radius = radius;
 	}
-	
+
 	double getArea() {
 		return Math.PI * radius * radius;
 	}
-	
+
 	double getPerimeter() {
 		return 2 * Math.PI * radius;
 	}
@@ -354,15 +354,15 @@ class Circle implements Shape {
 
 class Square implements Shape {
 	private int length;
-	
+
 	public Square(int length) {
 		this.length = length;
 	}
-	
+
 	double getArea() {
 		return length * length;
 	}
-	
+
 	double getPerimeter() {
 		return 4 * length;
 	}
@@ -378,11 +378,11 @@ class VolumeCalculator {
 	public static double getVolume(Shape s, double h) {
 		return s.getArea() * h;
 	}
-	
+
 	public static void main(String[] args) {
 		Circle c = new Circle(10);
 		System.out.println(getVolume(c, 10));
-		
+
 		Square s = new Square(10);
 		System.out.println(getVolume(s, 10));
 	}
@@ -402,14 +402,14 @@ class DmdExample {
 	public static void main(String[] args) {
 		Shape c = new Circle(10);
 		System.out.println(c.getArea());
-		
+
 		Shape s = new Square(10);
 		System.out.println(s.getArea());
 	}
 }
 ```
 
-As you can see, the reference is of the parent `Shape`, and the instance is of the child `Circle` or `Square`. When the method `getArea` is called, the runtime checks for an overridden method in the **instance**. 
+As you can see, the reference is of the parent `Shape`, and the instance is of the child `Circle` or `Square`. When the method `getArea` is called, the runtime checks for an overridden method in the **instance**.
 
 This now clarifies the two types of polymorphism and their implementations in Java:  
 1. Static Polymorphism = Overloading (Decided at **Compile time** )  
@@ -418,7 +418,7 @@ This now clarifies the two types of polymorphism and their implementations in Ja
 ### <a name="#instance-initialization-order"></a>Order of Instance Variable Initialization
 TODO
 
-### <a name="assignments"></a>Assignments 
+### <a name="assignments"></a>Assignments
 
 #### <a name="hackerrank"></a>HackerRank
 
@@ -449,4 +449,3 @@ Here are some interersting images and gifs from the Wiki page, which make Conway
 Try to understand how the above gifs are behaving.
 
 In the file Conway.java, there is an interface. Implement the interface.
-	
