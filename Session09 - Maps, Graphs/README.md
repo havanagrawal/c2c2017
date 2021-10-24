@@ -206,7 +206,7 @@ Note that both the algorithms are identical, except for a single data structure 
     3. The shortest path from the source vertex to the goal vertex
     Write your code step by step, using the pseudo code above as a starting point. Think and reason about whether your algorithm would work for directed graphs as well. Then try it out.
 4. Implement the DFS algorithm for an unweighted, undirected graph, to determine whether or not there are cycles in the graph. (Hint: you will ALWAYS encounter a vertex that is already on the stack in case there is a cycle)
-5. Study and implement [Djikstra's algorithm](https://www.hackerearth.com/practice/notes/dijkstras-algorithm/) for the shortest path in a weighted, directed graph. (It is pronounced as Dyke-stra)
+5. Study and implement [Dijkstra's algorithm](https://www.hackerearth.com/practice/notes/dijkstras-algorithm/) for the shortest path in a weighted, directed graph. (It is pronounced as Dyke-stra)
 
 #### <a name="gfg-graphs"></a>An Extensive List of Graph Topics
 Go through the topic list for the [Graph section at GeeksForGeeks](http://www.geeksforgeeks.org/graph-data-structure-and-algorithms/), and read the following topics thoroughly:  
